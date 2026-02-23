@@ -1,0 +1,412 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "生产统计",
+    "section": "",
+    "text": "Preface\n这是一本公司生产数据可视化书.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee 樊志伟 (2026) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n樊志伟. 2026. “生产统计.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "product.html",
+    "href": "product.html",
+    "title": "2  产量",
+    "section": "",
+    "text": "2.1 产量计划完成情况\n天然气产量累计万方\n41630.09\n日均产量800.58万方\n最高日产量880.3万方\n最低日产量0万方",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>产量</span>"
+    ]
+  },
+  {
+    "objectID": "product.html#产量月趋势",
+    "href": "product.html#产量月趋势",
+    "title": "2  产量",
+    "section": "2.4 产量月趋势",
+    "text": "2.4 产量月趋势",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>产量</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html",
+    "href": "danhao.html",
+    "title": "3  单耗",
+    "section": "",
+    "text": "3.1 天然气耗化工煤",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html",
+    "href": "huayan.html",
+    "title": "4  化验分析指标",
+    "section": "",
+    "text": "4.1 排放气指标汇总",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html#低甲排放气甲烷",
+    "href": "huayan.html#低甲排放气甲烷",
+    "title": "4  化验分析指标",
+    "section": "4.5 低甲排放气甲烷",
+    "text": "4.5 低甲排放气甲烷",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "flow.html",
+    "href": "flow.html",
+    "title": "5  流程图",
+    "section": "",
+    "text": "5.1 总体流程",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>流程图</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html#低甲排放气甲醇",
+    "href": "huayan.html#低甲排放气甲醇",
+    "title": "4  化验分析指标",
+    "section": "4.3 低甲排放气甲醇",
+    "text": "4.3 低甲排放气甲醇",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html#低甲排放气总硫",
+    "href": "huayan.html#低甲排放气总硫",
+    "title": "4  化验分析指标",
+    "section": "4.4 低甲排放气总硫",
+    "text": "4.4 低甲排放气总硫",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html",
+    "href": "甲烷化.html",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "",
+    "text": "6.1 辉煌催化剂照片",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#一期c103催化剂分布",
+    "href": "甲烷化.html#一期c103催化剂分布",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.11 一期C103催化剂分布",
+    "text": "6.11 一期C103催化剂分布",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#辉煌催化剂照片",
+    "href": "甲烷化.html#辉煌催化剂照片",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "",
+    "text": "辉煌DTC-M1C\n\n\n\n\n\n\n\n辉煌DTC-M1S",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#一期c102催化剂分布",
+    "href": "甲烷化.html#一期c102催化剂分布",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.10 一期C102催化剂分布",
+    "text": "6.10 一期C102催化剂分布",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "product.html#产量计划完成情况",
+    "href": "product.html#产量计划完成情况",
+    "title": "2  产量",
+    "section": "2.2 产量计划完成情况",
+    "text": "2.2 产量计划完成情况\n\n\n\n\n\n\n天然气产量累计万方\n36586.11\n日均产量831.5万方\n最高日产量880.3万方\n最低日产量762.43万方",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>产量</span>"
+    ]
+  },
+  {
+    "objectID": "product.html#天然气产量月度分析",
+    "href": "product.html#天然气产量月度分析",
+    "title": "2  产量",
+    "section": "2.2 天然气产量月度分析",
+    "text": "2.2 天然气产量月度分析",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>产量</span>"
+    ]
+  },
+  {
+    "objectID": "product.html#天然气产量月度分布",
+    "href": "product.html#天然气产量月度分布",
+    "title": "2  产量",
+    "section": "2.3 天然气产量月度分布",
+    "text": "2.3 天然气产量月度分布",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>产量</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html#矩阵",
+    "href": "huayan.html#矩阵",
+    "title": "4  化验分析指标",
+    "section": "4.5 矩阵",
+    "text": "4.5 矩阵\n\ne1&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `51排放气甲醇`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 50)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=50,max=1000,color='red'),list(min=0,max=50,color='blue')),show=FALSE)  %&gt;% e_legend(show=FALSE) %&gt;% e_tooltip()\ne2&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `52排放气甲醇`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 50)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=50,max=1000,color='red'),list(min=0,max=50,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ne3&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `53排放气甲醇`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 50)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=50,max=1000,color='red'),list(min=0,max=50,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ne4&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `54排放气甲醇`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 50)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=50,max=1000,color='red'),list(min=0,max=50,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ne5&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `51排放气总S`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 45.5)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=45.5,max=1000,color='red'),list(min=0,max=45.5,color='blue')),show=FALSE)  %&gt;% e_legend(show=FALSE) %&gt;% e_tooltip()\ne6&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `52排放气总S`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 45.5)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=45.5,max=1000,color='red'),list(min=0,max=45.5,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ne7&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `53排放气总S`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 45.5)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=45.5,max=1000,color='red'),list(min=0,max=45.5,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ne8&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `54排放气总S`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 45.5)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=45.5,max=1000,color='red'),list(min=0,max=45.5,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ne9&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `51排放气甲烷`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 0.93)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=0.93,max=1000,color='red'),list(min=0,max=0.93,color='blue')),show=FALSE)  %&gt;% e_legend(show=FALSE) %&gt;% e_tooltip()\ne10&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `52排放气甲烷`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 0.93)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=0.93,max=1000,color='red'),list(min=0,max=0.93,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ne11&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `53排放气甲烷`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 0.93)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=0.93,max=1000,color='red'),list(min=0,max=0.93,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ne12&lt;-hc_d  %&gt;%  drop_na() %&gt;% e_chart(时间)  %&gt;% e_line(serie = `54排放气甲烷`) %&gt;%  e_x_axis(splitNumber = 2) %&gt;% e_mark_line(data=list(yAxis = 0.93)) %&gt;%  e_tooltip(trigger='axis') %&gt;%  e_visual_map(type='piecewise',pieces=list(list(min=0.93,max=1000,color='red'),list(min=0,max=0.93,color='blue')),show=FALSE) %&gt;% e_tooltip()   %&gt;% e_legend(show=FALSE)\ndf&lt;-data.frame('单元'=rep(c(\"51单元\", \"52单元\", \"53单元\", \"54单元\"),each = 3),'指标'=c('低甲排放气甲醇','低甲排放气总硫','低甲排放气甲烷'))\ndf %&gt;% \n    e_charts()  %&gt;%  \n    e_matrix(xAxis = '单元', yAxis = '指标') %&gt;% \n    e_matrix_addChart(chart = e1, id = \"chart1\", coord = c(0,0)) %&gt;% \n    e_matrix_addChart(chart = e2, id = \"chart2\", coord = c(1,0)) %&gt;% \n    e_matrix_addChart(chart = e3, id = \"chart3\", coord = c(2,0)) %&gt;% \n    e_matrix_addChart(chart = e4, id = \"chart4\", coord = c(3,0))  %&gt;% \n    e_matrix_addChart(chart = e5, id = \"chart5\", coord = c(0,1))  %&gt;% \n    e_matrix_addChart(chart = e6, id = \"chart6\", coord = c(1,1))  %&gt;% \n    e_matrix_addChart(chart = e7, id = \"chart7\", coord = c(2,1))  %&gt;% \n    e_matrix_addChart(chart = e8, id = \"chart8\", coord = c(3,1)) %&gt;% \n    e_matrix_addChart(chart = e9, id = \"chart9\", coord = c(0,2)) %&gt;% \n    e_matrix_addChart(chart = e10, id = \"chart10\", coord = c(1,2)) %&gt;% \n    e_matrix_addChart(chart = e11, id = \"chart11\", coord = c(2,2)) %&gt;% \n    e_matrix_addChart(chart = e12, id = \"chart12\", coord = c(3,2))",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html#超标原因汇总",
+    "href": "huayan.html#超标原因汇总",
+    "title": "4  化验分析指标",
+    "section": "4.2 超标原因汇总",
+    "text": "4.2 超标原因汇总",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#甲烷化催化剂更换时间",
+    "href": "甲烷化.html#甲烷化催化剂更换时间",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.2 甲烷化催化剂更换时间",
+    "text": "6.2 甲烷化催化剂更换时间\n\n\n\n\n+\n-",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#庄信万丰催化剂更换时间",
+    "href": "甲烷化.html#庄信万丰催化剂更换时间",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.3 庄信万丰催化剂更换时间",
+    "text": "6.3 庄信万丰催化剂更换时间\n\n\n\n\n+\n-",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#化工院催化剂更换时间",
+    "href": "甲烷化.html#化工院催化剂更换时间",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.4 化工院催化剂更换时间",
+    "text": "6.4 化工院催化剂更换时间\n\n\n\n\n+\n-",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#催化剂更换数量趋势图",
+    "href": "甲烷化.html#催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.5 催化剂更换数量趋势图",
+    "text": "6.5 催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#crg-s2s催化剂更换数量趋势图",
+    "href": "甲烷化.html#crg-s2s催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.5 CRG-S2S催化剂更换数量趋势图",
+    "text": "6.5 CRG-S2S催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#crg-s2sr催化剂更换数量趋势图",
+    "href": "甲烷化.html#crg-s2sr催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.6 CRG-S2SR催化剂更换数量趋势图",
+    "text": "6.6 CRG-S2SR催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#dtc-m1c催化剂更换数量趋势图",
+    "href": "甲烷化.html#dtc-m1c催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.7 DTC-M1C催化剂更换数量趋势图",
+    "text": "6.7 DTC-M1C催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#dtc-m1s催化剂更换数量趋势图",
+    "href": "甲烷化.html#dtc-m1s催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.8 DTC-M1S催化剂更换数量趋势图",
+    "text": "6.8 DTC-M1S催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#甲烷化距离最后一次更换天数",
+    "href": "甲烷化.html#甲烷化距离最后一次更换天数",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.9 甲烷化距离最后一次更换天数",
+    "text": "6.9 甲烷化距离最后一次更换天数",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#crg-s2s庄信四叶草催化剂更换数量趋势图",
+    "href": "甲烷化.html#crg-s2s庄信四叶草催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.5 CRG-S2S(庄信四叶草)催化剂更换数量趋势图",
+    "text": "6.5 CRG-S2S(庄信四叶草)催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#crg-s2sr庄信圆柱催化剂更换数量趋势图",
+    "href": "甲烷化.html#crg-s2sr庄信圆柱催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.6 CRG-S2SR(庄信圆柱)催化剂更换数量趋势图",
+    "text": "6.6 CRG-S2SR(庄信圆柱)催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#dtc-m1c研究院四叶草催化剂更换数量趋势图",
+    "href": "甲烷化.html#dtc-m1c研究院四叶草催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.7 DTC-M1C（研究院四叶草）催化剂更换数量趋势图",
+    "text": "6.7 DTC-M1C（研究院四叶草）催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#dtc-m1s研究院柱形催化剂更换数量趋势图",
+    "href": "甲烷化.html#dtc-m1s研究院柱形催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.8 DTC-M1S（研究院柱形）催化剂更换数量趋势图",
+    "text": "6.8 DTC-M1S（研究院柱形）催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#crg-s2c庄信一代圆柱催化剂更换数量趋势图",
+    "href": "甲烷化.html#crg-s2c庄信一代圆柱催化剂更换数量趋势图",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.6 CRG-S2C(庄信一代圆柱)催化剂更换数量趋势图",
+    "text": "6.6 CRG-S2C(庄信一代圆柱)催化剂更换数量趋势图",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "工艺卡片.html",
+    "href": "工艺卡片.html",
+    "title": "7  工艺卡片",
+    "section": "",
+    "text": "7.1 变换温度指标",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>工艺卡片</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html#天然气耗动力煤",
+    "href": "danhao.html#天然气耗动力煤",
+    "title": "3  单耗",
+    "section": "3.2 天然气耗动力煤",
+    "text": "3.2 天然气耗动力煤",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html#天然气耗原水",
+    "href": "danhao.html#天然气耗原水",
+    "title": "3  单耗",
+    "section": "3.3 天然气耗原水",
+    "text": "3.3 天然气耗原水",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html#天然气耗蒸汽",
+    "href": "danhao.html#天然气耗蒸汽",
+    "title": "3  单耗",
+    "section": "3.4 天然气耗蒸汽",
+    "text": "3.4 天然气耗蒸汽",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html#电单耗未扣除技改电量",
+    "href": "danhao.html#电单耗未扣除技改电量",
+    "title": "3  单耗",
+    "section": "3.5 电单耗（未扣除技改电量）",
+    "text": "3.5 电单耗（未扣除技改电量）",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html#蒸汽耗燃料煤标煤",
+    "href": "danhao.html#蒸汽耗燃料煤标煤",
+    "title": "3  单耗",
+    "section": "3.6 蒸汽耗燃料煤标煤",
+    "text": "3.6 蒸汽耗燃料煤标煤",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html#多图实例",
+    "href": "danhao.html#多图实例",
+    "title": "3  单耗",
+    "section": "3.7 多图实例",
+    "text": "3.7 多图实例\n\n\n\n[[1]]\n\n[[2]]\n\n[[3]]\n\n[[4]]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html#末煤率",
+    "href": "danhao.html#末煤率",
+    "title": "3  单耗",
+    "section": "3.7 末煤率",
+    "text": "3.7 末煤率",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗</span>"
+    ]
+  }
+]

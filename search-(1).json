@@ -1,0 +1,122 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "生产统计",
+    "section": "",
+    "text": "Preface\n这是一本公司生产数据可视化书.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee 樊志伟 (2026) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n樊志伟. 2026. “生产统计.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "product.html",
+    "href": "product.html",
+    "title": "2  产量",
+    "section": "",
+    "text": "2.1 产量日趋势",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>产量</span>"
+    ]
+  },
+  {
+    "objectID": "product.html#产量月趋势",
+    "href": "product.html#产量月趋势",
+    "title": "2  产量",
+    "section": "2.2 产量月趋势",
+    "text": "2.2 产量月趋势\n\np&lt;-pivot_longer(product, cols = 2:11, names_to =\"产品\",values_to = \"产量\")\np %&gt;%  group_by(产品) %&gt;% e_charts(月份)  %&gt;%  e_bar(产量)  %&gt;% e_facet(rows=5,cols=2) %&gt;% e_tooltip()",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>产量</span>"
+    ]
+  },
+  {
+    "objectID": "danhao.html",
+    "href": "danhao.html",
+    "title": "3  单耗月趋势",
+    "section": "",
+    "text": "#单耗",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>单耗月趋势</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html",
+    "href": "huayan.html",
+    "title": "4  化验分析指标",
+    "section": "",
+    "text": "4.1 超标原因汇总",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html#低甲排放气甲烷",
+    "href": "huayan.html#低甲排放气甲烷",
+    "title": "4  化验分析指标",
+    "section": "4.4 低甲排放气甲烷",
+    "text": "4.4 低甲排放气甲烷",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "flow.html",
+    "href": "flow.html",
+    "title": "5  流程图",
+    "section": "",
+    "text": "5.1 总体流程",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>流程图</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html#低甲排放气总硫",
+    "href": "huayan.html#低甲排放气总硫",
+    "title": "4  化验分析指标",
+    "section": "4.3 低甲排放气总硫",
+    "text": "4.3 低甲排放气总硫",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "huayan.html#低甲排放气甲醇",
+    "href": "huayan.html#低甲排放气甲醇",
+    "title": "4  化验分析指标",
+    "section": "4.2 低甲排放气甲醇",
+    "text": "4.2 低甲排放气甲醇",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>化验分析指标</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html",
+    "href": "甲烷化.html",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "",
+    "text": "6.1 一期C102催化剂分布",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  },
+  {
+    "objectID": "甲烷化.html#一期c103催化剂分布",
+    "href": "甲烷化.html#一期c103催化剂分布",
+    "title": "6  甲烷化催化剂体积分布",
+    "section": "6.2 一期C103催化剂分布",
+    "text": "6.2 一期C103催化剂分布\n\n#| message: false\n#| warning: false\n#| echo: false\nlibrary(tidyverse)\nlibrary(echarts4r)\nurl&lt;-'D:\\\\华为家庭存储\\\\编程\\\\R语言\\\\svg\\\\绘图3.svg'\nsvg&lt;-url %&gt;% readLines() %&gt;% paste0(collapse = \"\")\ndf_103&lt;-data.frame(name=c('50瓷球','上部25瓷球','柱状催化剂','四叶草催化剂','10瓷球','下部25瓷球'),value=c(1.81,1.2,5,14.5,1.81,14.7))\ndf_103 %&gt;% arrange(value) %&gt;%  e_charts(name, elementId = \"CHART\") %&gt;% e_svg_register('svg', svg) %&gt;% e_geo(map='svg',left=10,right='50%',selectedMode='multiple', blur=FALSE, emphasis=list(focus='self',itemStyle=list(color=NULL))) %&gt;% e_grid(left='30%',top='20%',bottom='20%') %&gt;% e_bar(value,x_index=1,y_index=1) %&gt;% e_flip_coords() %&gt;% e_on( list(seriesIndex=0), \"function (event) { let c = get_e_charts('CHART'); c.dispatchAction({ type: 'highlight', geoIndex: 0, name: event.name }); }\",event='mouseover') %&gt;% e_on(list(seriesIndex=0), \"function (event) { let c = get_e_charts('CHART'); c.dispatchAction({ type: 'downplay', geoIndex: 0, name: event.name }); }\",event='mouseout') %&gt;% e_labels(position='inside')  %&gt;% e_title(text='一期C103瓷球、催化剂体积')",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>甲烷化催化剂体积分布</span>"
+    ]
+  }
+]

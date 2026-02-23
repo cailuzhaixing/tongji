@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; 甲烷化催化剂体积分布 – 生产统计</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./工艺卡片.html" rel="next">
+<link href="./flow.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-70a47bd5681a7291082a5b9f83d58762.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="site_libs/visjs-7.4.9/vis-timeline-graph2d.min.css" rel="stylesheet">
+
+<script src="site_libs/visjs-7.4.9/vis-timeline-graph2d.min.js"></script>
+
+<link href="site_libs/timeline-0.4/timevis.css" rel="stylesheet">
+
+<script src="site_libs/timevis-binding-2.1.0/timevis.js"></script>
+
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+
+<script src="site_libs/echarts4r-6.0.0/echarts.min.js"></script>
+
+<script src="site_libs/echarts4r-6.0.0/ecStat.min.js"></script>
+
+<script src="site_libs/echarts4r-6.0.0/dataTool.min.js"></script>
+
+<script src="site_libs/echarts4r-binding-0.5.0/echarts4r.js"></script>
+
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./甲烷化.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">甲烷化催化剂体积分布</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">生产统计</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./product.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">产量</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./danhao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">单耗月趋势</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./huayan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">化验分析指标</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./flow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">流程图</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./甲烷化.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">甲烷化催化剂体积分布</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./工艺卡片.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">工艺卡片</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#辉煌催化剂照片" id="toc-辉煌催化剂照片" class="nav-link active" data-scroll-target="#辉煌催化剂照片"><span class="header-section-number">6.1</span> 辉煌催化剂照片</a></li>
+  <li><a href="#甲烷化催化剂更换时间" id="toc-甲烷化催化剂更换时间" class="nav-link" data-scroll-target="#甲烷化催化剂更换时间"><span class="header-section-number">6.2</span> 甲烷化催化剂更换时间</a></li>
+  <li><a href="#庄信万丰催化剂更换时间" id="toc-庄信万丰催化剂更换时间" class="nav-link" data-scroll-target="#庄信万丰催化剂更换时间"><span class="header-section-number">6.3</span> 庄信万丰催化剂更换时间</a></li>
+  <li><a href="#化工院催化剂更换时间" id="toc-化工院催化剂更换时间" class="nav-link" data-scroll-target="#化工院催化剂更换时间"><span class="header-section-number">6.4</span> 化工院催化剂更换时间</a></li>
+  <li><a href="#crg-s2s庄信四叶草催化剂更换数量趋势图" id="toc-crg-s2s庄信四叶草催化剂更换数量趋势图" class="nav-link" data-scroll-target="#crg-s2s庄信四叶草催化剂更换数量趋势图"><span class="header-section-number">6.5</span> CRG-S2S(庄信四叶草)催化剂更换数量趋势图</a></li>
+  <li><a href="#crg-s2c庄信一代圆柱催化剂更换数量趋势图" id="toc-crg-s2c庄信一代圆柱催化剂更换数量趋势图" class="nav-link" data-scroll-target="#crg-s2c庄信一代圆柱催化剂更换数量趋势图"><span class="header-section-number">6.6</span> CRG-S2C(庄信一代圆柱)催化剂更换数量趋势图</a></li>
+  <li><a href="#dtc-m1c研究院四叶草催化剂更换数量趋势图" id="toc-dtc-m1c研究院四叶草催化剂更换数量趋势图" class="nav-link" data-scroll-target="#dtc-m1c研究院四叶草催化剂更换数量趋势图"><span class="header-section-number">6.7</span> DTC-M1C（研究院四叶草）催化剂更换数量趋势图</a></li>
+  <li><a href="#dtc-m1s研究院柱形催化剂更换数量趋势图" id="toc-dtc-m1s研究院柱形催化剂更换数量趋势图" class="nav-link" data-scroll-target="#dtc-m1s研究院柱形催化剂更换数量趋势图"><span class="header-section-number">6.8</span> DTC-M1S（研究院柱形）催化剂更换数量趋势图</a></li>
+  <li><a href="#甲烷化距离最后一次更换天数" id="toc-甲烷化距离最后一次更换天数" class="nav-link" data-scroll-target="#甲烷化距离最后一次更换天数"><span class="header-section-number">6.9</span> 甲烷化距离最后一次更换天数</a></li>
+  <li><a href="#一期c102催化剂分布" id="toc-一期c102催化剂分布" class="nav-link" data-scroll-target="#一期c102催化剂分布"><span class="header-section-number">6.10</span> 一期C102催化剂分布</a></li>
+  <li><a href="#一期c103催化剂分布" id="toc-一期c103催化剂分布" class="nav-link" data-scroll-target="#一期c103催化剂分布"><span class="header-section-number">6.11</span> 一期C103催化剂分布</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">甲烷化催化剂体积分布</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="辉煌催化剂照片" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="辉煌催化剂照片"><span class="header-section-number">6.1</span> 辉煌催化剂照片</h2>
+<div id="辉煌催化剂" class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/辉煌异形.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="辉煌DTC-M1C"><img src="img/辉煌异形.jpg" class="img-fluid figure-img" style="width:40.0%" alt="辉煌DTC-M1C"></a></p>
+<figcaption>辉煌DTC-M1C</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/辉煌柱状.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="辉煌DTC-M1S"><img src="img/辉煌柱状.jpg" class="img-fluid figure-img" style="width:40.0%" alt="辉煌DTC-M1S"></a></p>
+<figcaption>辉煌DTC-M1S</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="甲烷化催化剂更换时间" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="甲烷化催化剂更换时间"><span class="header-section-number">6.2</span> 甲烷化催化剂更换时间</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-6cab19eb0d8ff88f117d" class="timevis html-widget" style="width:672px;height:450px;">
+<div class="btn-group zoom-menu">
+<button type="button" class="btn btn-default btn-lg zoom-in" title="Zoom in">+</button>
+<button type="button" class="btn btn-default btn-lg zoom-out" title="Zoom out">-</button>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-6cab19eb0d8ff88f117d">{"x":{"items":[{"id":"1","start":"2012-06-15","content":"CRG-S2S初次装填","title":"7.1","group":"1"},{"id":"2","start":"2017-01-01","content":"CRG-S2SR补充装填","title":"4.975","group":"1"},{"id":"3","start":"2017-04-28","content":"CRG-S2SR全部更换","title":"7.1","group":"1"},{"id":"4","start":"2018-08-27","content":"DTC-M1S撇头更换","title":"4.24","group":"1"},{"id":"5","start":"2021-03-28","content":"DTC-M1S撇头更换","title":"5.2","group":"1"},{"id":"6","start":"2021-07-23","content":"DTC-M1S整体更换","title":"4.5","group":"1"},{"id":"7","start":"2022-08-13","content":"DTC-M1S撇头更换","title":"0.5","group":"1"},{"id":"8","start":"2023-09-17","content":"DTC-M1S撇头更换5m3","title":"5","group":"1"},{"id":"9","start":"2024-07-19","content":"DTC-M1S全部更换","title":"5.68","group":"1"},{"id":"10","start":"2025-03-31","content":"DTC-M1S全部更换","title":"7.1","group":"1"},{"id":"11","start":"2025-07-09","content":"DTC-M1S撇头更换","title":"2.5","group":"1"},{"id":"12","start":"2012-06-15","content":"CRG-S2C初次装填","title":"10.6","group":"1"},{"id":"13","start":"2017-04-28","content":"CRG-S2CR全部更换","title":"10.6","group":"1"},{"id":"14","start":"2019-07-25","content":"CRG-S2CR撇头更换，使用的四叶草","title":"3.5","group":"1"},{"id":"15","start":"2021-07-23","content":"DTC-M1C整体更换","title":"14.66","group":"1"},{"id":"16","start":"2022-08-13","content":"DTC-M1C撇头更换","title":"3.9","group":"1"},{"id":"17","start":"2024-07-19","content":"DTC-M1C全部更换","title":"8.48","group":"1"},{"id":"18","start":"2025-03-31","content":"DTC-M1C全部更换","title":"7.06","group":"1"},{"id":"19","start":"2012-06-15","content":"CRG-S2S初次装填","title":"9.7","group":"2"},{"id":"20","start":"2017-04-28","content":"CRG-S2SR整体更换","title":"9.7","group":"2"},{"id":"21","start":"2021-07-23","content":"DTC-M1S撇头更换","title":"8.8","group":"2"},{"id":"22","start":"2022-08-13","content":"DTC-M1S整体更换","title":"4.8","group":"2"},{"id":"23","start":"2023-09-17","content":"DTC-M1S整体更换","title":"9.7","group":"2"},{"id":"24","start":"2024-07-21","content":"DTC-M1S撇头","title":"3.73","group":"2"},{"id":"25","start":"2025-04-25","content":"DTC-M1S整体更换","title":"9.7","group":"2"},{"id":"26","start":"2012-06-15","content":"CRG-S2C初次装填","title":"14.5","group":"2"},{"id":"27","start":"2017-04-28","content":"CRG-S2CR整体更换","title":"14.5","group":"2"},{"id":"28","start":"2019-07-25","content":"CRG-S2CR撇头更换，使用的四叶草","title":"9.75","group":"2"},{"id":"29","start":"2022-08-13","content":"DTC-M1C整体更换","title":"13.75","group":"2"},{"id":"30","start":"2023-09-17","content":"DTC-M1C整体更换","title":"14.5","group":"2"},{"id":"31","start":"2025-04-25","content":"DTC-M1C整体更换","title":"9.66","group":"2"},{"id":"32","start":"2012-06-15","content":"CRG-S2S初次装填","title":"29.5","group":"3"},{"id":"33","start":"2012-06-15","content":"CRG-S2S初次装填","title":"19.8","group":"4"},{"id":"34","start":"2023-09-25","content":"CRG-S2S初次装填","title":"6.9","group":"5"},{"id":"35","start":"2024-05-06","content":"CRG-S2S撇头","title":"1.5","group":"5"},{"id":"36","start":"2024-07-17","content":"CRG-S2S撇头","title":"4","group":"5"},{"id":"37","start":"2024-07-18","content":"CRG-S2S补充装填","title":"3.6","group":"5"},{"id":"38","start":"2025-10-04","content":"CRG-S2SR整炉更换","title":"3.8","group":"5"},{"id":"39","start":"2023-09-25","content":"CRG-S2C初次装填","title":"10.6","group":"5"},{"id":"40","start":"2025-10-04","content":"CRG-S2CR整炉更换","title":"10.6","group":"5"},{"id":"41","start":"2023-09-25","content":"CRG-S2S初次装填","title":"11.7","group":"6"},{"id":"42","start":"2024-05-25","content":"CRG-S2S撇头","title":"2","group":"6"},{"id":"43","start":"2025-02-28","content":"DTC-MIS撇头更换","title":"9.5","group":"6"},{"id":"44","start":"2025-10-04","content":"CRG-S2SR撇头更换","title":"8","group":"6"},{"id":"45","start":"2023-09-25","content":"CRG-S2C初次装填","title":"14.5","group":"6"},{"id":"46","start":"2025-10-04","content":"CRG-S2CR撇头更换","title":"8","group":"6"},{"id":"47","start":"2023-09-26","content":"CRG-S2S初次装填","title":"30.3","group":"7"},{"id":"48","start":"2023-09-26","content":"CRG-S2S初次装填","title":"20.1","group":"8"}],"groups":[{"id":"1","content":"一期C102AB"},{"id":"2","content":"一期C103AB"},{"id":"3","content":"一期C104"},{"id":"4","content":"一期C105"},{"id":"5","content":"二期C102AB"},{"id":"6","content":"二期C103AB"},{"id":"7","content":"二期C104"},{"id":"8","content":"二期C105"}],"showZoom":true,"zoomFactor":0.5,"fit":false,"options":{"start":"2012-1-1","end":"2026-12-31","format":{"minorLabels":{"month":"M月","day":"D日"},"majorLabels":{"month":"YYYY年MM月"}}},"height":"450px","timezone":null,"api":[]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="庄信万丰催化剂更换时间" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="庄信万丰催化剂更换时间"><span class="header-section-number">6.3</span> 庄信万丰催化剂更换时间</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-68ef485ea8ead3e36488" class="timevis html-widget" style="width:672px;height:450px;">
+<div class="btn-group zoom-menu">
+<button type="button" class="btn btn-default btn-lg zoom-in" title="Zoom in">+</button>
+<button type="button" class="btn btn-default btn-lg zoom-out" title="Zoom out">-</button>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-68ef485ea8ead3e36488">{"x":{"items":[{"id":"1","start":"2012-06-15","content":"CRG-S2S初次装填","title":"7.1","group":"1"},{"id":"2","start":"2017-01-01","content":"CRG-S2SR补充装填","title":"4.975","group":"1"},{"id":"3","start":"2017-04-28","content":"CRG-S2SR全部更换","title":"7.1","group":"1"},{"id":"4","start":"2012-06-15","content":"CRG-S2C初次装填","title":"10.6","group":"1"},{"id":"5","start":"2017-04-28","content":"CRG-S2CR全部更换","title":"10.6","group":"1"},{"id":"6","start":"2019-07-25","content":"CRG-S2CR撇头更换，使用的四叶草","title":"3.5","group":"1"},{"id":"7","start":"2012-06-15","content":"CRG-S2S初次装填","title":"9.7","group":"2"},{"id":"8","start":"2017-04-28","content":"CRG-S2SR整体更换","title":"9.7","group":"2"},{"id":"9","start":"2012-06-15","content":"CRG-S2C初次装填","title":"14.5","group":"2"},{"id":"10","start":"2017-04-28","content":"CRG-S2CR整体更换","title":"14.5","group":"2"},{"id":"11","start":"2019-07-25","content":"CRG-S2CR撇头更换，使用的四叶草","title":"9.75","group":"2"},{"id":"12","start":"2012-06-15","content":"CRG-S2S初次装填","title":"29.5","group":"3"},{"id":"13","start":"2012-06-15","content":"CRG-S2S初次装填","title":"19.8","group":"4"},{"id":"14","start":"2023-09-25","content":"CRG-S2S初次装填","title":"6.9","group":"5"},{"id":"15","start":"2024-05-06","content":"CRG-S2S撇头","title":"1.5","group":"5"},{"id":"16","start":"2024-07-17","content":"CRG-S2S撇头","title":"4","group":"5"},{"id":"17","start":"2024-07-18","content":"CRG-S2S补充装填","title":"3.6","group":"5"},{"id":"18","start":"2025-10-04","content":"CRG-S2SR整炉更换","title":"3.8","group":"5"},{"id":"19","start":"2023-09-25","content":"CRG-S2C初次装填","title":"10.6","group":"5"},{"id":"20","start":"2025-10-04","content":"CRG-S2CR整炉更换","title":"10.6","group":"5"},{"id":"21","start":"2023-09-25","content":"CRG-S2S初次装填","title":"11.7","group":"6"},{"id":"22","start":"2024-05-25","content":"CRG-S2S撇头","title":"2","group":"6"},{"id":"23","start":"2025-10-04","content":"CRG-S2SR撇头更换","title":"8","group":"6"},{"id":"24","start":"2023-09-25","content":"CRG-S2C初次装填","title":"14.5","group":"6"},{"id":"25","start":"2025-10-04","content":"CRG-S2CR撇头更换","title":"8","group":"6"},{"id":"26","start":"2023-09-26","content":"CRG-S2S初次装填","title":"30.3","group":"7"},{"id":"27","start":"2023-09-26","content":"CRG-S2S初次装填","title":"20.1","group":"8"}],"groups":[{"id":"1","content":"一期C102AB"},{"id":"2","content":"一期C103AB"},{"id":"3","content":"一期C104"},{"id":"4","content":"一期C105"},{"id":"5","content":"二期C102AB"},{"id":"6","content":"二期C103AB"},{"id":"7","content":"二期C104"},{"id":"8","content":"二期C105"}],"showZoom":true,"zoomFactor":0.5,"fit":false,"options":{"start":"2012-1-1","end":"2026-12-31","format":{"minorLabels":{"month":"M月","day":"D日"},"majorLabels":{"month":"YYYY年MM月"}}},"height":"450px","timezone":null,"api":[]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="化工院催化剂更换时间" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="化工院催化剂更换时间"><span class="header-section-number">6.4</span> 化工院催化剂更换时间</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-329019d725e1e9076e8a" class="timevis html-widget" style="width:672px;height:450px;">
+<div class="btn-group zoom-menu">
+<button type="button" class="btn btn-default btn-lg zoom-in" title="Zoom in">+</button>
+<button type="button" class="btn btn-default btn-lg zoom-out" title="Zoom out">-</button>
+</div>
+</div>
+<script type="application/json" data-for="htmlwidget-329019d725e1e9076e8a">{"x":{"items":[{"id":"1","start":"2018-08-27","content":"DTC-M1S撇头更换","title":"4.24","group":"1"},{"id":"2","start":"2021-03-28","content":"DTC-M1S撇头更换","title":"5.2","group":"1"},{"id":"3","start":"2021-07-23","content":"DTC-M1S整体更换","title":"4.5","group":"1"},{"id":"4","start":"2022-08-13","content":"DTC-M1S撇头更换","title":"0.5","group":"1"},{"id":"5","start":"2023-09-17","content":"DTC-M1S撇头更换5m3","title":"5","group":"1"},{"id":"6","start":"2024-07-19","content":"DTC-M1S全部更换","title":"5.68","group":"1"},{"id":"7","start":"2025-03-31","content":"DTC-M1S全部更换","title":"7.1","group":"1"},{"id":"8","start":"2025-07-09","content":"DTC-M1S撇头更换","title":"2.5","group":"1"},{"id":"9","start":"2021-07-23","content":"DTC-M1C整体更换","title":"14.66","group":"1"},{"id":"10","start":"2022-08-13","content":"DTC-M1C撇头更换","title":"3.9","group":"1"},{"id":"11","start":"2024-07-19","content":"DTC-M1C全部更换","title":"8.48","group":"1"},{"id":"12","start":"2025-03-31","content":"DTC-M1C全部更换","title":"7.06","group":"1"},{"id":"13","start":"2021-07-23","content":"DTC-M1S撇头更换","title":"8.8","group":"2"},{"id":"14","start":"2022-08-13","content":"DTC-M1S整体更换","title":"4.8","group":"2"},{"id":"15","start":"2023-09-17","content":"DTC-M1S整体更换","title":"9.7","group":"2"},{"id":"16","start":"2024-07-21","content":"DTC-M1S撇头","title":"3.73","group":"2"},{"id":"17","start":"2025-04-25","content":"DTC-M1S整体更换","title":"9.7","group":"2"},{"id":"18","start":"2022-08-13","content":"DTC-M1C整体更换","title":"13.75","group":"2"},{"id":"19","start":"2023-09-17","content":"DTC-M1C整体更换","title":"14.5","group":"2"},{"id":"20","start":"2025-04-25","content":"DTC-M1C整体更换","title":"9.66","group":"2"},{"id":"21","start":"2025-02-28","content":"DTC-MIS撇头更换","title":"9.5","group":"6"}],"groups":[{"id":"1","content":"一期C102AB"},{"id":"2","content":"一期C103AB"},{"id":"3","content":"二期C103AB"}],"showZoom":true,"zoomFactor":0.5,"fit":false,"options":{"start":"2012-1-1","end":"2026-12-31","format":{"minorLabels":{"month":"M月","day":"D日"},"majorLabels":{"month":"YYYY年MM月"}}},"height":"450px","timezone":null,"api":[]},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="crg-s2s庄信四叶草催化剂更换数量趋势图" class="level2 page-columns page-full" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="crg-s2s庄信四叶草催化剂更换数量趋势图"><span class="header-section-number">6.5</span> CRG-S2S(庄信四叶草)催化剂更换数量趋势图</h2>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-screen">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-372c222bce47109ebd8f" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-372c222bce47109ebd8f">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"matrix":{"x":{"data":[null,null],"show":false},"y":{"data":[null,null,null,null],"show":false},"left":"5%","width":"90%"},"yAxis":[{"show":true,"id":"chart1","gridId":"chart1"},{"show":true,"id":"chart2","gridId":"chart2"},{"show":true,"id":"chart3","gridId":"chart3"},{"show":true,"id":"chart4","gridId":"chart4"},{"show":true,"id":"chart5","gridId":"chart5"},{"show":true,"id":"chart6","gridId":"chart6"},{"show":true,"id":"chart7","gridId":"chart7"},{"show":true,"id":"chart8","gridId":"chart8"}],"xAxis":[{"data":["2012-06-14T16:00:00Z","2016-12-31T16:00:00Z","2017-04-27T16:00:00Z","2023-09-24T16:00:00Z","2024-05-05T16:00:00Z","2024-07-16T16:00:00Z","2024-07-17T16:00:00Z","2025-10-03T16:00:00Z","2024-05-24T16:00:00Z","2023-09-25T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart1","gridId":"chart1"},{"data":["2012-06-14T16:00:00Z","2016-12-31T16:00:00Z","2017-04-27T16:00:00Z","2023-09-24T16:00:00Z","2024-05-05T16:00:00Z","2024-07-16T16:00:00Z","2024-07-17T16:00:00Z","2025-10-03T16:00:00Z","2024-05-24T16:00:00Z","2023-09-25T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart2","gridId":"chart2"},{"data":["2012-06-14T16:00:00Z","2016-12-31T16:00:00Z","2017-04-27T16:00:00Z","2023-09-24T16:00:00Z","2024-05-05T16:00:00Z","2024-07-16T16:00:00Z","2024-07-17T16:00:00Z","2025-10-03T16:00:00Z","2024-05-24T16:00:00Z","2023-09-25T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart3","gridId":"chart3"},{"data":["2012-06-14T16:00:00Z","2016-12-31T16:00:00Z","2017-04-27T16:00:00Z","2023-09-24T16:00:00Z","2024-05-05T16:00:00Z","2024-07-16T16:00:00Z","2024-07-17T16:00:00Z","2025-10-03T16:00:00Z","2024-05-24T16:00:00Z","2023-09-25T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart4","gridId":"chart4"},{"data":["2012-06-14T16:00:00Z","2016-12-31T16:00:00Z","2017-04-27T16:00:00Z","2023-09-24T16:00:00Z","2024-05-05T16:00:00Z","2024-07-16T16:00:00Z","2024-07-17T16:00:00Z","2025-10-03T16:00:00Z","2024-05-24T16:00:00Z","2023-09-25T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart5","gridId":"chart5"},{"data":["2012-06-14T16:00:00Z","2016-12-31T16:00:00Z","2017-04-27T16:00:00Z","2023-09-24T16:00:00Z","2024-05-05T16:00:00Z","2024-07-16T16:00:00Z","2024-07-17T16:00:00Z","2025-10-03T16:00:00Z","2024-05-24T16:00:00Z","2023-09-25T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart6","gridId":"chart6"},{"data":["2012-06-14T16:00:00Z","2016-12-31T16:00:00Z","2017-04-27T16:00:00Z","2023-09-24T16:00:00Z","2024-05-05T16:00:00Z","2024-07-16T16:00:00Z","2024-07-17T16:00:00Z","2025-10-03T16:00:00Z","2024-05-24T16:00:00Z","2023-09-25T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart7","gridId":"chart7"},{"data":["2012-06-14T16:00:00Z","2016-12-31T16:00:00Z","2017-04-27T16:00:00Z","2023-09-24T16:00:00Z","2024-05-05T16:00:00Z","2024-07-16T16:00:00Z","2024-07-17T16:00:00Z","2025-10-03T16:00:00Z","2024-05-24T16:00:00Z","2023-09-25T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart8","gridId":"chart8"}],"series":[{"data":[{"value":["2012-06-15","7.100","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填"]},{"value":["2017-01-01","4.975","CRG-S2SR补充装填","CRG-S2SR整体更换",null,null,"CRG-S2S撇头","CRG-S2S撇头",null,null]},{"value":["2017-04-28","7.100","CRG-S2SR全部更换",null,null,null,"CRG-S2S撇头","CRG-S2SR撇头更换",null,null]}],"name":"一期C102AB","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"xAxisId":"chart1","yAxisId":"chart1"},{"data":[{"value":["2012-06-15","9.7","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填"]},{"value":["2017-04-28","9.7","CRG-S2SR补充装填","CRG-S2SR整体更换",null,null,"CRG-S2S撇头","CRG-S2S撇头",null,null]}],"name":"一期C103AB","type":"bar","yAxisIndex":1,"xAxisIndex":1,"coordinateSystem":"cartesian2d","barWidth":10,"xAxisId":"chart2","yAxisId":"chart2"},{"data":[{"value":["2012-06-15","29.5","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填"]}],"name":"一期C104","type":"bar","yAxisIndex":2,"xAxisIndex":2,"coordinateSystem":"cartesian2d","barWidth":10,"xAxisId":"chart3","yAxisId":"chart3"},{"data":[{"value":["2012-06-15","19.8","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填"]}],"name":"一期C105","type":"bar","yAxisIndex":3,"xAxisIndex":3,"coordinateSystem":"cartesian2d","barWidth":10,"xAxisId":"chart4","yAxisId":"chart4"},{"data":[{"value":["2023-09-25","6.9","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填"]},{"value":["2024-05-06","1.5","CRG-S2SR补充装填","CRG-S2SR整体更换",null,null,"CRG-S2S撇头","CRG-S2S撇头",null,null]},{"value":["2024-07-17","4.0","CRG-S2SR全部更换",null,null,null,"CRG-S2S撇头","CRG-S2SR撇头更换",null,null]},{"value":["2024-07-18","3.6",null,null,null,null,"CRG-S2S补充装填",null,null,null]},{"value":["2025-10-04","3.8",null,null,null,null,"CRG-S2SR整炉更换",null,null,null]}],"name":"二期C102AB","type":"bar","yAxisIndex":4,"xAxisIndex":4,"coordinateSystem":"cartesian2d","barWidth":10,"xAxisId":"chart5","yAxisId":"chart5"},{"data":[{"value":["2023-09-25","11.7","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填"]},{"value":["2024-05-25"," 2.0","CRG-S2SR补充装填","CRG-S2SR整体更换",null,null,"CRG-S2S撇头","CRG-S2S撇头",null,null]},{"value":["2025-10-04"," 8.0","CRG-S2SR全部更换",null,null,null,"CRG-S2S撇头","CRG-S2SR撇头更换",null,null]}],"name":"二期C103AB","type":"bar","yAxisIndex":5,"xAxisIndex":5,"coordinateSystem":"cartesian2d","barWidth":10,"xAxisId":"chart6","yAxisId":"chart6"},{"data":[{"value":["2023-09-26","30.3","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填"]}],"name":"二期C104","type":"bar","yAxisIndex":6,"xAxisIndex":6,"coordinateSystem":"cartesian2d","barWidth":10,"xAxisId":"chart7","yAxisId":"chart7"},{"data":[{"value":["2023-09-26","20.1","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填","CRG-S2S初次装填"]}],"name":"二期C105","type":"bar","yAxisIndex":7,"xAxisIndex":7,"coordinateSystem":"cartesian2d","barWidth":10,"xAxisId":"chart8","yAxisId":"chart8"}],"grid":[{"id":"chart1","coordinateSystem":"matrix","coord":[0,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart2","coordinateSystem":"matrix","coord":[0,1],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart3","coordinateSystem":"matrix","coord":[0,2],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart4","coordinateSystem":"matrix","coord":[0,3],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart5","coordinateSystem":"matrix","coord":[1,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart6","coordinateSystem":"matrix","coord":[1,1],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart7","coordinateSystem":"matrix","coord":[1,2],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart8","coordinateSystem":"matrix","coord":[1,3],"left":"5","top":"25%","right":"5","bottom":"5"}],"title":[{"text":"催化剂更换数量"},{"text":"一期C102AB","coordinateSystem":"matrix","coord":[0,0],"left":"center","top":"top"},{"text":"一期C103AB","coordinateSystem":"matrix","coord":[0,1],"left":"center","top":"top"},{"text":"一期C104","coordinateSystem":"matrix","coord":[0,2],"left":"center","top":"top"},{"text":"一期C105","coordinateSystem":"matrix","coord":[0,3],"left":"center","top":"top"},{"text":"二期C102AB","coordinateSystem":"matrix","coord":[1,0],"left":"center","top":"top"},{"text":"二期C103AB","coordinateSystem":"matrix","coord":[1,1],"left":"center","top":"top"},{"text":"二期C104","coordinateSystem":"matrix","coord":[1,2],"left":"center","top":"top"},{"text":"二期C105","coordinateSystem":"matrix","coord":[1,3],"left":"center","top":"top"}],"tooltip":{"trigger":"item","formatter":"function(params) {\n        return '时间: ' + params.value[0] +  '<br>' + \n        '更换数量: ' + params.value[1] + '立方米'  +  '<br>' +  \n        '备注:' + params.value[2];     \n    }"}},"dispose":true},"evals":["opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="crg-s2c庄信一代圆柱催化剂更换数量趋势图" class="level2 page-columns page-full" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="crg-s2c庄信一代圆柱催化剂更换数量趋势图"><span class="header-section-number">6.6</span> CRG-S2C(庄信一代圆柱)催化剂更换数量趋势图</h2>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-screen">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-117a87c53ba68b19382f" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-117a87c53ba68b19382f">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"matrix":{"x":{"data":[null,null],"show":false},"y":{"data":[null,null],"show":false},"left":"5%","width":"90%"},"yAxis":[{"show":true,"id":"chart1","gridId":"chart1"},{"show":true,"id":"chart2","gridId":"chart2"},{"show":true,"id":"chart3","gridId":"chart3"},{"show":true,"id":"chart4","gridId":"chart4"}],"xAxis":[{"data":["2012-06-14T16:00:00Z","2017-04-27T16:00:00Z","2019-07-24T16:00:00Z","2023-09-24T16:00:00Z","2025-10-03T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart1","gridId":"chart1"},{"data":["2012-06-14T16:00:00Z","2017-04-27T16:00:00Z","2019-07-24T16:00:00Z","2023-09-24T16:00:00Z","2025-10-03T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart2","gridId":"chart2"},{"data":["2012-06-14T16:00:00Z","2017-04-27T16:00:00Z","2019-07-24T16:00:00Z","2023-09-24T16:00:00Z","2025-10-03T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart3","gridId":"chart3"},{"data":["2012-06-14T16:00:00Z","2017-04-27T16:00:00Z","2019-07-24T16:00:00Z","2023-09-24T16:00:00Z","2025-10-03T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart4","gridId":"chart4"}],"series":[{"data":[{"value":["2012-06-15","10.6","CRG-S2C初次装填","CRG-S2C初次装填","CRG-S2C初次装填","CRG-S2C初次装填"]},{"value":["2017-04-28","10.6","CRG-S2CR全部更换","CRG-S2CR整体更换","CRG-S2CR整炉更换","CRG-S2CR撇头更换"]},{"value":["2019-07-25"," 3.5","CRG-S2CR撇头更换，使用的四叶草","CRG-S2CR撇头更换，使用的四叶草",null,null]}],"name":"一期C102AB","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":"20%","barMinWidth":10,"xAxisId":"chart1","yAxisId":"chart1"},{"data":[{"value":["2012-06-15","14.50","CRG-S2C初次装填","CRG-S2C初次装填","CRG-S2C初次装填","CRG-S2C初次装填"]},{"value":["2017-04-28","14.50","CRG-S2CR全部更换","CRG-S2CR整体更换","CRG-S2CR整炉更换","CRG-S2CR撇头更换"]},{"value":["2019-07-25"," 9.75","CRG-S2CR撇头更换，使用的四叶草","CRG-S2CR撇头更换，使用的四叶草",null,null]}],"name":"一期C103AB","type":"bar","yAxisIndex":1,"xAxisIndex":1,"coordinateSystem":"cartesian2d","barWidth":"20%","barMinWidth":10,"xAxisId":"chart2","yAxisId":"chart2"},{"data":[{"value":["2023-09-25","10.6","CRG-S2C初次装填","CRG-S2C初次装填","CRG-S2C初次装填","CRG-S2C初次装填"]},{"value":["2025-10-04","10.6","CRG-S2CR全部更换","CRG-S2CR整体更换","CRG-S2CR整炉更换","CRG-S2CR撇头更换"]}],"name":"二期C102AB","type":"bar","yAxisIndex":2,"xAxisIndex":2,"coordinateSystem":"cartesian2d","barWidth":"20%","barMinWidth":10,"xAxisId":"chart3","yAxisId":"chart3"},{"data":[{"value":["2023-09-25","14.5","CRG-S2C初次装填","CRG-S2C初次装填","CRG-S2C初次装填","CRG-S2C初次装填"]},{"value":["2025-10-04"," 8.0","CRG-S2CR全部更换","CRG-S2CR整体更换","CRG-S2CR整炉更换","CRG-S2CR撇头更换"]}],"name":"二期C103AB","type":"bar","yAxisIndex":3,"xAxisIndex":3,"coordinateSystem":"cartesian2d","barWidth":"20%","barMinWidth":10,"xAxisId":"chart4","yAxisId":"chart4"}],"grid":[{"id":"chart1","coordinateSystem":"matrix","coord":[0,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart2","coordinateSystem":"matrix","coord":[1,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart3","coordinateSystem":"matrix","coord":[0,1],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart4","coordinateSystem":"matrix","coord":[1,1],"left":"5","top":"25%","right":"5","bottom":"5"}],"title":[{"text":"催化剂更换数量"},{"text":"一期C102AB","coordinateSystem":"matrix","coord":[0,0],"left":"center","top":"top"},{"text":"一期C103AB","coordinateSystem":"matrix","coord":[1,0],"left":"center","top":"top"},{"text":"二期C102AB","coordinateSystem":"matrix","coord":[0,1],"left":"center","top":"top"},{"text":"二期C103AB","coordinateSystem":"matrix","coord":[1,1],"left":"center","top":"top"}],"tooltip":{"trigger":"item","formatter":"function(params) {\n        return '时间: ' + params.value[0] +  '<br>' + \n        '更换数量: ' + params.value[1] + '立方米'  +  '<br>' +  \n        '备注:' + params.value[2];     \n    }"}},"dispose":true},"evals":["opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="dtc-m1c研究院四叶草催化剂更换数量趋势图" class="level2 page-columns page-full" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="dtc-m1c研究院四叶草催化剂更换数量趋势图"><span class="header-section-number">6.7</span> DTC-M1C（研究院四叶草）催化剂更换数量趋势图</h2>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-screen">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-e2cae768df3239ee107d" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-e2cae768df3239ee107d">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"matrix":{"x":{"data":[null,null],"show":false},"y":{"data":[null],"show":false},"left":"5%","width":"90%"},"yAxis":[{"show":true,"id":"chart1","gridId":"chart1"},{"show":true,"id":"chart2","gridId":"chart2"}],"xAxis":[{"data":["2021-07-22T16:00:00Z","2022-08-12T16:00:00Z","2024-07-18T16:00:00Z","2025-03-30T16:00:00Z","2023-09-16T16:00:00Z","2025-04-24T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart1","gridId":"chart1"},{"data":["2021-07-22T16:00:00Z","2022-08-12T16:00:00Z","2024-07-18T16:00:00Z","2025-03-30T16:00:00Z","2023-09-16T16:00:00Z","2025-04-24T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart2","gridId":"chart2"}],"series":[{"data":[{"value":["2021-07-23","14.66","DTC-M1C整体更换","DTC-M1C整体更换"]},{"value":["2022-08-13"," 3.90","DTC-M1C撇头更换","DTC-M1C整体更换"]},{"value":["2024-07-19"," 8.48","DTC-M1C全部更换","DTC-M1C整体更换"]},{"value":["2025-03-31"," 7.06","DTC-M1C全部更换",null]}],"name":"一期C102AB","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":"10%","xAxisId":"chart1","yAxisId":"chart1"},{"data":[{"value":["2022-08-13","13.75","DTC-M1C整体更换","DTC-M1C整体更换"]},{"value":["2023-09-17","14.50","DTC-M1C撇头更换","DTC-M1C整体更换"]},{"value":["2025-04-25"," 9.66","DTC-M1C全部更换","DTC-M1C整体更换"]}],"name":"一期C103AB","type":"bar","yAxisIndex":1,"xAxisIndex":1,"coordinateSystem":"cartesian2d","barWidth":"10%","xAxisId":"chart2","yAxisId":"chart2"}],"grid":[{"id":"chart1","coordinateSystem":"matrix","coord":[0,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart2","coordinateSystem":"matrix","coord":[1,0],"left":"5","top":"25%","right":"5","bottom":"5"}],"title":[{"text":"催化剂更换数量"},{"text":"一期C102AB","coordinateSystem":"matrix","coord":[0,0],"left":"center","top":"top"},{"text":"一期C103AB","coordinateSystem":"matrix","coord":[1,0],"left":"center","top":"top"}],"tooltip":{"trigger":"item","formatter":"function(params) {\n        return '时间: ' + params.value[0] +  '<br>' + \n        '更换数量: ' + params.value[1] + '立方米'  +  '<br>' +  \n        '备注:' + params.value[2];     \n    }"}},"dispose":true},"evals":["opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="dtc-m1s研究院柱形催化剂更换数量趋势图" class="level2 page-columns page-full" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="dtc-m1s研究院柱形催化剂更换数量趋势图"><span class="header-section-number">6.8</span> DTC-M1S（研究院柱形）催化剂更换数量趋势图</h2>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-screen">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-4baddd0dbd52c8ce44d9" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-4baddd0dbd52c8ce44d9">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"matrix":{"x":{"data":[null,null,null],"show":false},"y":{"data":[null],"show":false},"left":"5%","width":"90%"},"yAxis":[{"show":true,"id":"chart1","gridId":"chart1"},{"show":true,"id":"chart2","gridId":"chart2"},{"show":true,"id":"chart3","gridId":"chart3"}],"xAxis":[{"data":["2018-08-26T16:00:00Z","2021-03-27T16:00:00Z","2021-07-22T16:00:00Z","2022-08-12T16:00:00Z","2023-09-16T16:00:00Z","2024-07-18T16:00:00Z","2025-03-30T16:00:00Z","2025-07-08T16:00:00Z","2024-07-20T16:00:00Z","2025-04-24T16:00:00Z","2025-02-27T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart1","gridId":"chart1"},{"data":["2018-08-26T16:00:00Z","2021-03-27T16:00:00Z","2021-07-22T16:00:00Z","2022-08-12T16:00:00Z","2023-09-16T16:00:00Z","2024-07-18T16:00:00Z","2025-03-30T16:00:00Z","2025-07-08T16:00:00Z","2024-07-20T16:00:00Z","2025-04-24T16:00:00Z","2025-02-27T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart2","gridId":"chart2"},{"data":["2018-08-26T16:00:00Z","2021-03-27T16:00:00Z","2021-07-22T16:00:00Z","2022-08-12T16:00:00Z","2023-09-16T16:00:00Z","2024-07-18T16:00:00Z","2025-03-30T16:00:00Z","2025-07-08T16:00:00Z","2024-07-20T16:00:00Z","2025-04-24T16:00:00Z","2025-02-27T16:00:00Z"],"type":"time","boundaryGap":true,"splitNumber":2,"id":"chart3","gridId":"chart3"}],"series":[{"data":[{"value":["2018-08-27","4.24","DTC-M1S撇头更换","DTC-M1S撇头更换","DTC-MIS撇头更换"]},{"value":["2021-03-28","5.20","DTC-M1S撇头更换","DTC-M1S整体更换",null]},{"value":["2021-07-23","4.50","DTC-M1S整体更换","DTC-M1S整体更换",null]},{"value":["2022-08-13","0.50","DTC-M1S撇头更换","DTC-M1S撇头",null]},{"value":["2023-09-17","5.00","DTC-M1S撇头更换5m3","DTC-M1S整体更换",null]},{"value":["2024-07-19","5.68","DTC-M1S全部更换",null,null]},{"value":["2025-03-31","7.10","DTC-M1S全部更换",null,null]},{"value":["2025-07-09","2.50","DTC-M1S撇头更换",null,null]}],"name":"一期C102AB","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":5,"xAxisId":"chart1","yAxisId":"chart1"},{"data":[{"value":["2021-07-23","8.80","DTC-M1S撇头更换","DTC-M1S撇头更换","DTC-MIS撇头更换"]},{"value":["2022-08-13","4.80","DTC-M1S撇头更换","DTC-M1S整体更换",null]},{"value":["2023-09-17","9.70","DTC-M1S整体更换","DTC-M1S整体更换",null]},{"value":["2024-07-21","3.73","DTC-M1S撇头更换","DTC-M1S撇头",null]},{"value":["2025-04-25","9.70","DTC-M1S撇头更换5m3","DTC-M1S整体更换",null]}],"name":"一期C103AB","type":"bar","yAxisIndex":1,"xAxisIndex":1,"coordinateSystem":"cartesian2d","barWidth":5,"xAxisId":"chart2","yAxisId":"chart2"},{"data":[{"value":["2025-02-28","9.5","DTC-M1S撇头更换","DTC-M1S撇头更换","DTC-MIS撇头更换"]}],"name":"二期C103AB","type":"bar","yAxisIndex":2,"xAxisIndex":2,"coordinateSystem":"cartesian2d","barWidth":5,"xAxisId":"chart3","yAxisId":"chart3"}],"grid":[{"id":"chart1","coordinateSystem":"matrix","coord":[0,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart2","coordinateSystem":"matrix","coord":[1,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart3","coordinateSystem":"matrix","coord":[2,0],"left":"5","top":"25%","right":"5","bottom":"5"}],"title":[{"text":"催化剂更换数量"},{"text":"一期C102AB","coordinateSystem":"matrix","coord":[0,0],"left":"center","top":"top"},{"text":"一期C103AB","coordinateSystem":"matrix","coord":[1,0],"left":"center","top":"top"},{"text":"二期C103AB","coordinateSystem":"matrix","coord":[2,0],"left":"center","top":"top"}],"tooltip":{"trigger":"item","formatter":"function(params) {\n        return '时间: ' + params.value[0] +  '<br>' + \n        '更换数量: ' + params.value[1] + '立方米'  +  '<br>' +  \n        '备注:' + params.value[2];     \n    }"}},"dispose":true},"evals":["opts.tooltip.formatter"],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="甲烷化距离最后一次更换天数" class="level2 page-columns page-full" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="甲烷化距离最后一次更换天数"><span class="header-section-number">6.9</span> 甲烷化距离最后一次更换天数</h2>
+<div class="cell page-columns page-full">
+<div class="cell-output-display column-screen">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-a9cb255e1a9fbcde8d5f" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-a9cb255e1a9fbcde8d5f">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"breaks":[{"start":" 350","end":" 800","gap":"3%"},{"start":"1000","end":"4800","gap":"3%"}],"breakArea":{"zigzagAmplitude":10}}],"xAxis":[{"data":["一期C102AB","一期C103AB","一期C104","一期C105","二期C102AB","二期C103AB","二期C104","二期C105"],"type":"category","boundaryGap":true,"axisLabel":{"rotate":45}}],"legend":{"data":["一期C102AB","一期C103AB","一期C104","一期C105","二期C102AB","二期C103AB","二期C104","二期C105"],"show":false,"type":"plain"},"series":[{"data":[{"value":["一期C102AB","229"]}],"name":"一期C102AB","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"label":{"show":true,"position":"top"}},{"data":[{"value":["一期C103AB","304"]}],"name":"一期C103AB","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"label":{"show":true,"position":"top"}},{"data":[{"value":["一期C104","5001"]}],"name":"一期C104","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"label":{"show":true,"position":"top"}},{"data":[{"value":["一期C105","5001"]}],"name":"一期C105","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"label":{"show":true,"position":"top"}},{"data":[{"value":["二期C102AB","142"]}],"name":"二期C102AB","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"label":{"show":true,"position":"top"}},{"data":[{"value":["二期C103AB","142"]}],"name":"二期C103AB","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"label":{"show":true,"position":"top"}},{"data":[{"value":["二期C104","881"]}],"name":"二期C104","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"label":{"show":true,"position":"top"}},{"data":[{"value":["二期C105","881"]}],"name":"二期C105","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","barWidth":10,"label":{"show":true,"position":"top"}}],"title":[{"text":"甲烷化反应器距离最后一次更换时间(天)"}]},"dispose":true},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="一期c102催化剂分布" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="一期c102催化剂分布"><span class="header-section-number">6.10</span> 一期C102催化剂分布</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="echarts4r html-widget html-fill-item" id="MYCHART" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="MYCHART">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"geo":{"map":"svg","left":10,"right":"50%","selectedMode":"multiple","blur":false,"emphasis":{"focus":"self","itemStyle":{"color":null}}},"grid":[{"left":"30%","top":"20%","bottom":"20%"}],"xAxis":[null,{"type":"value"}],"yAxis":[null,{"type":"category","data":["上部25瓷球","50瓷球","10瓷球","柱状催化剂","下部25瓷球","四叶草催化剂"]}],"legend":{"data":["value"]},"series":[{"data":[{"value":["0.83","上部25瓷球"]},{"value":["1.20","50瓷球"]},{"value":["1.20","10瓷球"]},{"value":["5.68","柱状催化剂"]},{"value":["8.30","下部25瓷球"]},{"value":["8.68","四叶草催化剂"]}],"name":"value","type":"bar","yAxisIndex":1,"xAxisIndex":1,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"inside"}}],"title":[{"text":"一期C102瓷球、催化剂体积"}]},"dispose":true,"registerMap":[{"mapName":"svg","geoJSON":{"svg":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><svg   version=\"1.1\"   width=\"1190.5511\"   height=\"841.88977\"   id=\"svg70\"   viewBox=\"0 0 1190.5511 841.88977\"   sodipodi:docname=\"绘图3.svg\"   inkscape:version=\"1.2.2 (732a01da63, 2022-12-09)\"   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"   xmlns=\"http://www.w3.org/2000/svg\"   xmlns:svg=\"http://www.w3.org/2000/svg\">  <defs     id=\"defs74\" />  <sodipodi:namedview     id=\"namedview72\"     pagecolor=\"#ffffff\"     bordercolor=\"#000000\"     borderopacity=\"0.25\"     inkscape:showpageshadow=\"2\"     inkscape:pageopacity=\"0.0\"     inkscape:pagecheckerboard=\"0\"     inkscape:deskcolor=\"#d1d1d1\"     showgrid=\"false\"     inkscape:zoom=\"0.98468948\"     inkscape:cx=\"543.82626\"     inkscape:cy=\"424.49931\"     inkscape:window-width=\"1920\"     inkscape:window-height=\"1009\"     inkscape:window-x=\"-8\"     inkscape:window-y=\"-8\"     inkscape:window-maximized=\"1\"     inkscape:current-layer=\"svg70\" />  <g     id=\"Layer1000\">    <g       id=\"Layer1001\">      <path         d=\"m 174.3307,600.5906 a 110.2046,66.0303 0 0 0 216.8504,0 V 156.2598 a 110.2046,66.0303 0 0 0 -216.8504,0 z\"         style=\"fill:#ffffff;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path2\" />      <path         d=\"m 174.3307,600.5906 a 110.2046,66.0303 0 0 0 216.8504,0 V 156.2598 a 110.2046,66.0303 0 0 0 -216.8504,0 z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path4\" />    <\/g>  <\/g>  <g     id=\"Layer1002\"     name=\"柱状催化剂\">    <g       id=\"Layer1003\">      <path         d=\"M 174.3307,379.8425 H 391.1811 V 289.1339 H 174.3307 Z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path8\" />      <path         d=\"M 174.3307,379.8425 H 391.1811 V 289.1339 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path10\" />    <\/g>    <text       x=\"257.30569\"       y=\"338.46085\"       id=\"text15\"><tspan         font-family=\"'Times New Roman'\"         font-size=\"12px\"         fill=\"#000000\"         fill-opacity=\"1\"         stroke-opacity=\"1\"         id=\"tspan13\" /><\/text>  <\/g>  <g     id=\"Layer1004\"     name=\"四叶草催化剂\">    <g       id=\"Layer1005\">      <path         d=\"M 174.3307,526.5354 H 391.1811 V 380.5512 H 174.3307 Z\"         style=\"fill:#e5b9b5;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path18\" />      <path         d=\"M 174.3307,526.5354 H 391.1811 V 380.5512 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path20\" />    <\/g>    <text       x=\"256.5264\"       y=\"453.5433\"       id=\"text27\" />  <\/g>  <g     id=\"Layer1006\"     name=\"上部25瓷球\">    <g       id=\"Layer1007\">      <path         d=\"M 174.3307,289.1339 H 391.1811 V 246.6142 H 174.3307 Z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path30\" />      <path         d=\"M 174.3307,289.1339 H 391.1811 V 246.6142 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path32\" />    <\/g>  <\/g>  <g     id=\"Layer1008\"     name=\"50瓷球\">    <g       id=\"Layer1009\">      <path         d=\"M 174.3307,246.6142 H 391.1811 V 204.0945 H 174.3307 Z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path40\" />      <path         d=\"M 174.3307,246.6142 H 391.1811 V 204.0945 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path42\" />    <\/g>  <\/g>  <g     id=\"Layer1010\"     name=\"10瓷球\">    <g       id=\"Layer1011\">      <path         d=\"M 174.3307,569.7638 H 391.1811 V 527.2441 H 174.3307 Z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path50\" />      <path         d=\"M 174.3307,569.7638 H 391.1811 V 527.2441 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path52\" />    <\/g>    <text       x=\"274.33069\"       y=\"548.50391\"       id=\"text57\"       style=\"white-space:pre;inline-size:0\"><tspan         font-family=\"'Times New Roman'\"         font-size=\"12px\"         fill=\"#000000\"         fill-opacity=\"1\"         stroke-opacity=\"1\"         id=\"tspan55\" /><\/text>  <\/g>  <g     id=\"Layer1012\"     name=\"下部25瓷球\">    <g       id=\"Layer1013\">      <path         d=\"M 391.1811,569.7638 H 174.3307 v 30.8268 a 110.2046,66.0303 0 0 0 216.8504,0 z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path60\" />      <path         d=\"M 391.1811,569.7638 H 174.3307 v 30.8268 a 110.2046,66.0303 0 0 0 216.8504,0 z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path62\" />    <\/g>    <text       x=\"274.33069\"       y=\"612.28351\"       id=\"text67\"><tspan         font-family=\"'Times New Roman'\"         font-size=\"12px\"         fill=\"#000000\"         fill-opacity=\"1\"         stroke-opacity=\"1\"         id=\"tspan65\" /><\/text>  <\/g>  <path     style=\"fill:#008080;stroke-width:1.01555\"     d=\"m 175.6899,453.95021 v -72.10395 h 107.14038 107.14037 v 72.10395 72.10395 H 282.83028 175.6899 Z\"     id=\"path471\" />  <path     style=\"fill:#00ffff;stroke-width:1.01555\"     d=\"m 175.6899,334.62326 v -44.17637 h 107.14038 107.14037 v 44.17637 44.17636 H 282.83028 175.6899 Z\"     id=\"path611\" />  <path     style=\"fill:#e9afaf;stroke-width:1.01555\"     d=\"m 175.6899,268.10482 v -20.31097 h 107.14038 107.14037 v 20.31097 20.31098 H 282.83028 175.6899 Z\"     id=\"path682\" />  <path     style=\"fill:#ff7f2a;stroke-width:1.01555\"     d=\"m 175.6899,225.45178 v -20.31097 h 107.14038 107.14037 v 20.31097 20.31098 H 282.83028 175.6899 Z\"     id=\"path822\" />  <path     style=\"fill:#e9afaf;stroke-width:1.01555\"     d=\"m 175.6899,548.39623 v -20.31097 h 107.14038 107.14037 v 20.31097 20.31097 H 282.83028 175.6899 Z\"     id=\"path893\" />  <path     style=\"fill:#ffe680;stroke-width:1.01555\"     d=\"m 268.6126,653.34671 c -32.08291,-3.81466 -50.33757,-9.86602 -69.39409,-23.00393 -8.8146,-6.07695 -16.07776,-13.9198 -20.39877,-22.02683 -3.11163,-5.83802 -3.12984,-5.9644 -3.12984,-21.72491 V 570.7383 h 107.14038 107.14037 l -0.0101,15.48712 c -0.009,14.10741 -0.22183,15.93947 -2.3886,20.56485 -11.01085,23.5047 -45.07357,41.53294 -87.18362,46.14333 -9.28374,1.01642 -24.98501,1.22055 -31.77592,0.41311 z\"     id=\"path1033\" /><\/svg>"}}],"on":[{"event":"mouseover","query":{"seriesIndex":0},"handler":"function (event) { let c = get_e_charts('MYCHART'); c.dispatchAction({ type: 'highlight', geoIndex: 0, name: event.name }); }"},{"event":"mouseout","query":{"seriesIndex":0},"handler":"function (event) { let c = get_e_charts('MYCHART'); c.dispatchAction({ type: 'downplay', geoIndex: 0, name: event.name }); }"}]},"evals":["on.0.handler","on.1.handler"],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="一期c103催化剂分布" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="一期c103催化剂分布"><span class="header-section-number">6.11</span> 一期C103催化剂分布</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="echarts4r html-widget html-fill-item" id="CHART" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="CHART">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"geo":{"map":"svg","left":10,"right":"50%","selectedMode":"multiple","blur":false,"emphasis":{"focus":"self","itemStyle":{"color":null}}},"grid":[{"left":"30%","top":"20%","bottom":"20%"}],"xAxis":[null,{"type":"value"}],"yAxis":[null,{"type":"category","data":["上部25瓷球","50瓷球","10瓷球","柱状催化剂","四叶草催化剂","下部25瓷球"]}],"legend":{"data":["value"]},"series":[{"data":[{"value":[" 1.20","上部25瓷球"]},{"value":[" 1.81","50瓷球"]},{"value":[" 1.81","10瓷球"]},{"value":[" 5.00","柱状催化剂"]},{"value":["14.50","四叶草催化剂"]},{"value":["14.70","下部25瓷球"]}],"name":"value","type":"bar","yAxisIndex":1,"xAxisIndex":1,"coordinateSystem":"cartesian2d","label":{"show":true,"position":"inside"}}],"title":[{"text":"一期C103瓷球、催化剂体积"}]},"dispose":true,"registerMap":[{"mapName":"svg","geoJSON":{"svg":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><svg   version=\"1.1\"   width=\"1190.5511\"   height=\"841.88977\"   id=\"svg70\"   viewBox=\"0 0 1190.5511 841.88977\"   sodipodi:docname=\"绘图3.svg\"   inkscape:version=\"1.2.2 (732a01da63, 2022-12-09)\"   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"   xmlns=\"http://www.w3.org/2000/svg\"   xmlns:svg=\"http://www.w3.org/2000/svg\">  <defs     id=\"defs74\" />  <sodipodi:namedview     id=\"namedview72\"     pagecolor=\"#ffffff\"     bordercolor=\"#000000\"     borderopacity=\"0.25\"     inkscape:showpageshadow=\"2\"     inkscape:pageopacity=\"0.0\"     inkscape:pagecheckerboard=\"0\"     inkscape:deskcolor=\"#d1d1d1\"     showgrid=\"false\"     inkscape:zoom=\"0.98468948\"     inkscape:cx=\"543.82626\"     inkscape:cy=\"424.49931\"     inkscape:window-width=\"1920\"     inkscape:window-height=\"1009\"     inkscape:window-x=\"-8\"     inkscape:window-y=\"-8\"     inkscape:window-maximized=\"1\"     inkscape:current-layer=\"svg70\" />  <g     id=\"Layer1000\">    <g       id=\"Layer1001\">      <path         d=\"m 174.3307,600.5906 a 110.2046,66.0303 0 0 0 216.8504,0 V 156.2598 a 110.2046,66.0303 0 0 0 -216.8504,0 z\"         style=\"fill:#ffffff;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path2\" />      <path         d=\"m 174.3307,600.5906 a 110.2046,66.0303 0 0 0 216.8504,0 V 156.2598 a 110.2046,66.0303 0 0 0 -216.8504,0 z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path4\" />    <\/g>  <\/g>  <g     id=\"Layer1002\"     name=\"柱状催化剂\">    <g       id=\"Layer1003\">      <path         d=\"M 174.3307,379.8425 H 391.1811 V 289.1339 H 174.3307 Z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path8\" />      <path         d=\"M 174.3307,379.8425 H 391.1811 V 289.1339 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path10\" />    <\/g>    <text       x=\"257.30569\"       y=\"338.46085\"       id=\"text15\"><tspan         font-family=\"'Times New Roman'\"         font-size=\"12px\"         fill=\"#000000\"         fill-opacity=\"1\"         stroke-opacity=\"1\"         id=\"tspan13\" /><\/text>  <\/g>  <g     id=\"Layer1004\"     name=\"四叶草催化剂\">    <g       id=\"Layer1005\">      <path         d=\"M 174.3307,526.5354 H 391.1811 V 380.5512 H 174.3307 Z\"         style=\"fill:#e5b9b5;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path18\" />      <path         d=\"M 174.3307,526.5354 H 391.1811 V 380.5512 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path20\" />    <\/g>    <text       x=\"256.5264\"       y=\"453.5433\"       id=\"text27\" />  <\/g>  <g     id=\"Layer1006\"     name=\"上部25瓷球\">    <g       id=\"Layer1007\">      <path         d=\"M 174.3307,289.1339 H 391.1811 V 246.6142 H 174.3307 Z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path30\" />      <path         d=\"M 174.3307,289.1339 H 391.1811 V 246.6142 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path32\" />    <\/g>  <\/g>  <g     id=\"Layer1008\"     name=\"50瓷球\">    <g       id=\"Layer1009\">      <path         d=\"M 174.3307,246.6142 H 391.1811 V 204.0945 H 174.3307 Z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path40\" />      <path         d=\"M 174.3307,246.6142 H 391.1811 V 204.0945 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path42\" />    <\/g>  <\/g>  <g     id=\"Layer1010\"     name=\"10瓷球\">    <g       id=\"Layer1011\">      <path         d=\"M 174.3307,569.7638 H 391.1811 V 527.2441 H 174.3307 Z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path50\" />      <path         d=\"M 174.3307,569.7638 H 391.1811 V 527.2441 H 174.3307 Z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path52\" />    <\/g>    <text       x=\"274.33069\"       y=\"548.50391\"       id=\"text57\"       style=\"white-space:pre;inline-size:0\"><tspan         font-family=\"'Times New Roman'\"         font-size=\"12px\"         fill=\"#000000\"         fill-opacity=\"1\"         stroke-opacity=\"1\"         id=\"tspan55\" /><\/text>  <\/g>  <g     id=\"Layer1012\"     name=\"下部25瓷球\">    <g       id=\"Layer1013\">      <path         d=\"M 391.1811,569.7638 H 174.3307 v 30.8268 a 110.2046,66.0303 0 0 0 216.8504,0 z\"         style=\"fill:#f2dcda;fill-rule:evenodd;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round\"         id=\"path60\" />      <path         d=\"M 391.1811,569.7638 H 174.3307 v 30.8268 a 110.2046,66.0303 0 0 0 216.8504,0 z\"         style=\"fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none\"         id=\"path62\" />    <\/g>    <text       x=\"274.33069\"       y=\"612.28351\"       id=\"text67\"><tspan         font-family=\"'Times New Roman'\"         font-size=\"12px\"         fill=\"#000000\"         fill-opacity=\"1\"         stroke-opacity=\"1\"         id=\"tspan65\" /><\/text>  <\/g>  <path     style=\"fill:#008080;stroke-width:1.01555\"     d=\"m 175.6899,453.95021 v -72.10395 h 107.14038 107.14037 v 72.10395 72.10395 H 282.83028 175.6899 Z\"     id=\"path471\" />  <path     style=\"fill:#00ffff;stroke-width:1.01555\"     d=\"m 175.6899,334.62326 v -44.17637 h 107.14038 107.14037 v 44.17637 44.17636 H 282.83028 175.6899 Z\"     id=\"path611\" />  <path     style=\"fill:#e9afaf;stroke-width:1.01555\"     d=\"m 175.6899,268.10482 v -20.31097 h 107.14038 107.14037 v 20.31097 20.31098 H 282.83028 175.6899 Z\"     id=\"path682\" />  <path     style=\"fill:#ff7f2a;stroke-width:1.01555\"     d=\"m 175.6899,225.45178 v -20.31097 h 107.14038 107.14037 v 20.31097 20.31098 H 282.83028 175.6899 Z\"     id=\"path822\" />  <path     style=\"fill:#e9afaf;stroke-width:1.01555\"     d=\"m 175.6899,548.39623 v -20.31097 h 107.14038 107.14037 v 20.31097 20.31097 H 282.83028 175.6899 Z\"     id=\"path893\" />  <path     style=\"fill:#ffe680;stroke-width:1.01555\"     d=\"m 268.6126,653.34671 c -32.08291,-3.81466 -50.33757,-9.86602 -69.39409,-23.00393 -8.8146,-6.07695 -16.07776,-13.9198 -20.39877,-22.02683 -3.11163,-5.83802 -3.12984,-5.9644 -3.12984,-21.72491 V 570.7383 h 107.14038 107.14037 l -0.0101,15.48712 c -0.009,14.10741 -0.22183,15.93947 -2.3886,20.56485 -11.01085,23.5047 -45.07357,41.53294 -87.18362,46.14333 -9.28374,1.01642 -24.98501,1.22055 -31.77592,0.41311 z\"     id=\"path1033\" /><\/svg>"}}],"on":[{"event":"mouseover","query":{"seriesIndex":0},"handler":"function (event) { let c = get_e_charts('CHART'); c.dispatchAction({ type: 'highlight', geoIndex: 0, name: event.name }); }"},{"event":"mouseout","query":{"seriesIndex":0},"handler":"function (event) { let c = get_e_charts('CHART'); c.dispatchAction({ type: 'downplay', geoIndex: 0, name: event.name }); }"}]},"evals":["on.0.handler","on.1.handler"],"jsHooks":[]}</script>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./flow.html" class="pagination-link" aria-label="流程图">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">流程图</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./工艺卡片.html" class="pagination-link" aria-label="工艺卡片">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">工艺卡片</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

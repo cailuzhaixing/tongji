@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; 产量 – 生产统计</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./danhao.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-70a47bd5681a7291082a5b9f83d58762.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+
+<script src="site_libs/bslib-component-js-0.10.0/components.min.js"></script>
+
+<script src="site_libs/bslib-component-js-0.10.0/web-components.min.js" type="module"></script>
+
+<link href="site_libs/bslib-component-css-0.10.0/components.css" rel="stylesheet">
+
+<script src="site_libs/bslib-tag-require-0.10.0/tag-require.js"></script>
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="site_libs/echarts4r-6.0.0/echarts.min.js"></script>
+
+<script src="site_libs/echarts4r-6.0.0/ecStat.min.js"></script>
+
+<script src="site_libs/echarts4r-6.0.0/dataTool.min.js"></script>
+
+<script src="site_libs/echarts4r-binding-0.5.0/echarts4r.js"></script>
+
+<script src="site_libs/echarts-liquidfill-1.0.0/echarts-liquidfill.min.js"></script>
+
+<script src="site_libs/dark-1.0.0/dark.js"></script>
+
+<script src="site_libs/echarts-violin-1.0.0/echarts-violin.js"></script>
+
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./product.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">产量</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">生产统计</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./product.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">产量</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./danhao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">单耗月趋势</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./huayan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">化验分析指标</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./flow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">流程图</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./甲烷化.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">甲烷化催化剂体积分布</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./工艺卡片.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">工艺卡片</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#产量计划完成情况" id="toc-产量计划完成情况" class="nav-link active" data-scroll-target="#产量计划完成情况"><span class="header-section-number">2.1</span> 产量计划完成情况</a></li>
+  <li><a href="#天然气产量月度分析" id="toc-天然气产量月度分析" class="nav-link" data-scroll-target="#天然气产量月度分析"><span class="header-section-number">2.2</span> 天然气产量月度分析</a></li>
+  <li><a href="#天然气产量月度分布" id="toc-天然气产量月度分布" class="nav-link" data-scroll-target="#天然气产量月度分布"><span class="header-section-number">2.3</span> 天然气产量月度分布</a></li>
+  <li><a href="#产量月趋势" id="toc-产量月趋势" class="nav-link" data-scroll-target="#产量月趋势"><span class="header-section-number">2.4</span> 产量月趋势</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">产量</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="产量计划完成情况" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="产量计划完成情况"><span class="header-section-number">2.1</span> 产量计划完成情况</h2>
+<div class="cell quarto-layout-panel" data-layout="[[25,25],[100]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box bg-purple" data-bslib-card-init="" data-require-bs-caller="card() value_box()" data-require-bs-version="5 5" style="height:250px;">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="value-box-area html-fill-item html-fill-container">
+<p class="value-box-title">天然气产量累计万方</p>
+<p class="value-box-value">41630.09</p>
+<p>日均产量800.58万方</p>
+<p>最高日产量880.3万方</p>
+<p>最低日产量0万方</p>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="htmlwidget-5418504f86d78155345a" style="width:100%;height:250px;" class="echarts4r html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5418504f86d78155345a">{"x":{"theme":"dark","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"series":[{"type":"liquidFill","data":[0.15,0.1]}],"title":[{"text":"中新能化年产量计划完成率"}]},"dispose":true},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-b757c1c4743f04e53163" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-b757c1c4743f04e53163">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true}],"xAxis":[{"data":["2025-12-31T16:00:00Z","2026-01-01T16:00:00Z","2026-01-02T16:00:00Z","2026-01-03T16:00:00Z","2026-01-04T16:00:00Z","2026-01-05T16:00:00Z","2026-01-06T16:00:00Z","2026-01-07T16:00:00Z","2026-01-08T16:00:00Z","2026-01-09T16:00:00Z","2026-01-10T16:00:00Z","2026-01-11T16:00:00Z","2026-01-12T16:00:00Z","2026-01-13T16:00:00Z","2026-01-14T16:00:00Z","2026-01-15T16:00:00Z","2026-01-16T16:00:00Z","2026-01-17T16:00:00Z","2026-01-18T16:00:00Z","2026-01-19T16:00:00Z","2026-01-20T16:00:00Z","2026-01-21T16:00:00Z","2026-01-22T16:00:00Z","2026-01-23T16:00:00Z","2026-01-24T16:00:00Z","2026-01-25T16:00:00Z","2026-01-26T16:00:00Z","2026-01-27T16:00:00Z","2026-01-28T16:00:00Z","2026-01-29T16:00:00Z","2026-01-30T16:00:00Z","2026-01-31T16:00:00Z","2026-02-01T16:00:00Z","2026-02-02T16:00:00Z","2026-02-03T16:00:00Z","2026-02-04T16:00:00Z","2026-02-05T16:00:00Z","2026-02-06T16:00:00Z","2026-02-07T16:00:00Z","2026-02-08T16:00:00Z","2026-02-09T16:00:00Z","2026-02-10T16:00:00Z","2026-02-11T16:00:00Z","2026-02-12T16:00:00Z","2026-02-13T16:00:00Z","2026-02-14T16:00:00Z","2026-02-15T16:00:00Z","2026-02-16T16:00:00Z","2026-02-17T16:00:00Z","2026-02-18T16:00:00Z","2026-02-19T16:00:00Z"],"type":"time","boundaryGap":true}],"legend":{"data":["天然气"]},"series":[{"data":[{"value":["2026-01-01","802.66"]},{"value":["2026-01-02","802.87"]},{"value":["2026-01-03","801.49"]},{"value":["2026-01-04","805.94"]},{"value":["2026-01-05","810.57"]},{"value":["2026-01-06","810.93"]},{"value":["2026-01-07","810.51"]},{"value":["2026-01-08","812.79"]},{"value":["2026-01-09","810.96"]},{"value":["2026-01-10","796.29"]},{"value":["2026-01-11","762.43"]},{"value":["2026-01-12","762.77"]},{"value":["2026-01-13","860.78"]},{"value":["2026-01-14","865.59"]},{"value":["2026-01-15","870.03"]},{"value":["2026-01-16","863.29"]},{"value":["2026-01-17","864.39"]},{"value":["2026-01-18","863.02"]},{"value":["2026-01-19","865.52"]},{"value":["2026-01-20","863.08"]},{"value":["2026-01-21","862.76"]},{"value":["2026-01-22","858.01"]},{"value":["2026-01-23","864.75"]},{"value":["2026-01-24","862.74"]},{"value":["2026-01-25","864.42"]},{"value":["2026-01-26","871.40"]},{"value":["2026-01-27","872.01"]},{"value":["2026-01-28","870.56"]},{"value":["2026-01-29","880.30"]},{"value":["2026-01-30","792.36"]},{"value":["2026-01-31","841.64"]},{"value":["2026-02-01","840.23"]},{"value":["2026-02-02","804.03"]},{"value":["2026-02-03","804.88"]},{"value":["2026-02-04","815.88"]},{"value":["2026-02-05","826.34"]},{"value":["2026-02-06","824.64"]},{"value":["2026-02-07","822.40"]},{"value":["2026-02-08","821.82"]},{"value":["2026-02-09","819.97"]},{"value":["2026-02-10","818.24"]},{"value":["2026-02-11","819.69"]},{"value":["2026-02-12","819.86"]},{"value":["2026-02-13","801.27"]},{"value":["2026-02-14","711.25"]},{"value":["2026-02-15","682.85"]},{"value":["2026-02-16","727.12"]},{"value":["2026-02-17","745.14"]},{"value":["2026-02-18","727.78"]},{"value":["2026-02-19","730.71"]},{"value":["2026-02-20","719.13"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"天然气","type":"line","coordinateSystem":"cartesian2d","markLine":{"data":[{"yAxis":850,"label":{"formatter":"能化日计划","position":null}}]}}],"visualMap":[{"pieces":[{"min":0,"max":850,"color":"red"},{"min":850,"max":1000,"color":"green"}],"calculable":true,"type":"piecewise"}],"tooltip":{"trigger":"axis"},"title":[{"text":"天然气日产量趋势"}]},"dispose":true},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</section>
+<section id="天然气产量月度分析" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="天然气产量月度分析"><span class="header-section-number">2.2</span> 天然气产量月度分析</h2>
+<div class="cell quarto-layout-panel" data-layout-nrow="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-3c68e738f191405dc55c" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-3c68e738f191405dc55c">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true},{"type":"value"}],"xAxis":[{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true}],"legend":{"data":["天然气","环比","同比"]},"series":[{"data":[{"value":["2025-01","22276.46"]},{"value":["2025-02","21623.15"]},{"value":["2025-03","22875.16"]},{"value":["2025-04","18677.77"]},{"value":["2025-05","25670.68"]},{"value":["2025-06","25545.35"]},{"value":["2025-07","23638.12"]},{"value":["2025-08","24105.39"]},{"value":["2025-09","23071.40"]},{"value":["2025-10","23528.43"]},{"value":["2025-11","26448.75"]},{"value":["2025-12","26209.79"]},{"value":["2026-01","25946.85"]},{"value":["2026-02","15683.23"]}],"name":"天然气","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d"},{"data":[{"value":["2025-01",null]},{"value":["2025-02"," -2.93"]},{"value":["2025-03","  5.79"]},{"value":["2025-04","-18.35"]},{"value":["2025-05"," 37.44"]},{"value":["2025-06"," -0.49"]},{"value":["2025-07"," -7.47"]},{"value":["2025-08","  1.98"]},{"value":["2025-09"," -4.29"]},{"value":["2025-10","  1.98"]},{"value":["2025-11"," 12.41"]},{"value":["2025-12"," -0.90"]},{"value":["2026-01"," -1.00"]},{"value":["2026-02","-39.56"]}],"yAxisIndex":1,"xAxisIndex":0,"name":"环比","type":"line","coordinateSystem":"cartesian2d"},{"data":[{"value":["2025-01",null]},{"value":["2025-02",null]},{"value":["2025-03",null]},{"value":["2025-04",null]},{"value":["2025-05",null]},{"value":["2025-06",null]},{"value":["2025-07",null]},{"value":["2025-08",null]},{"value":["2025-09",null]},{"value":["2025-10",null]},{"value":["2025-11",null]},{"value":["2025-12",null]},{"value":["2026-01"," 16.48"]},{"value":["2026-02","-27.47"]}],"yAxisIndex":1,"xAxisIndex":0,"name":"同比","type":"line","coordinateSystem":"cartesian2d"}],"visualMap":[{"pieces":[{"min":0,"max":100,"color":"green"},{"max":0,"color":"red"},{"min":100,"color":"#5470c6"}],"calculable":true,"type":"piecewise"}],"tooltip":{"trigger":"axis"}},"dispose":true},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</section>
+<section id="天然气产量月度分布" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="天然气产量月度分布"><span class="header-section-number">2.3</span> 天然气产量月度分布</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-7f306a29e588d0258e42" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-7f306a29e588d0258e42">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true}],"xAxis":[{"data":["2026-01","2026-02"],"type":"category","boundaryGap":true,"jitter":20,"jitterOverlap":false,"jitterMargin":5}],"legend":{"data":["天然气","violin"]},"series":[{"data":[{"value":["2026-01","802.6615"]},{"value":["2026-01","801.4939"]},{"value":["2026-01","805.9379"]},{"value":["2026-01","810.5691"]},{"value":["2026-01","810.9260"]},{"value":["2026-01","810.5102"]},{"value":["2026-01","812.7866"]},{"value":["2026-01","810.9578"]},{"value":["2026-01","796.2927"]},{"value":["2026-01","762.4264"]},{"value":["2026-01","762.7693"]},{"value":["2026-01","860.7822"]},{"value":["2026-01","865.5948"]},{"value":["2026-01","870.0257"]},{"value":["2026-01","863.2874"]},{"value":["2026-01","864.3850"]},{"value":["2026-01","863.0161"]},{"value":["2026-01","802.8653"]},{"value":["2026-01","865.5205"]},{"value":["2026-01","863.0829"]},{"value":["2026-01","862.7644"]},{"value":["2026-01","858.0136"]},{"value":["2026-01","864.7463"]},{"value":["2026-01","862.7380"]},{"value":["2026-01","864.4208"]},{"value":["2026-01","871.4020"]},{"value":["2026-01","872.0147"]},{"value":["2026-01","870.5604"]},{"value":["2026-01","880.2971"]},{"value":["2026-01","792.3593"]},{"value":["2026-01","841.6445"]},{"value":["2026-02","840.2335"]},{"value":["2026-02","804.0341"]},{"value":["2026-02","804.8799"]},{"value":["2026-02","815.8845"]},{"value":["2026-02","826.3373"]},{"value":["2026-02","824.6370"]},{"value":["2026-02","822.3994"]},{"value":["2026-02","821.8198"]},{"value":["2026-02","819.9734"]},{"value":["2026-02","818.2399"]},{"value":["2026-02","819.6859"]},{"value":["2026-02","819.8571"]},{"value":["2026-02","801.2726"]},{"value":["2026-02","711.2538"]},{"value":["2026-02","682.8511"]},{"value":["2026-02","727.1177"]},{"value":["2026-02","745.1387"]},{"value":["2026-02","727.7752"]},{"value":["2026-02","730.7140"]},{"value":["2026-02","719.1303"]},{"value":["2026-02","  0.0000"]}],"name":"天然气","type":"scatter","symbol":null,"coordinateSystem":"cartesian2d","yAxisIndex":0,"xAxisIndex":0,"symbolSize":3},{"type":"custom","renderItem":"violin","silent":true,"itemPayload":{"symbolSize":10,"areaOpacity":0.5,"binCount":100,"bandWidthScale":1},"name":"violin"}],"dataset":{"source":[["2026-01","802.6615"],["2026-01","801.4939"],["2026-01","805.9379"],["2026-01","810.5691"],["2026-01","810.9260"],["2026-01","810.5102"],["2026-01","812.7866"],["2026-01","810.9578"],["2026-01","796.2927"],["2026-01","762.4264"],["2026-01","762.7693"],["2026-01","860.7822"],["2026-01","865.5948"],["2026-01","870.0257"],["2026-01","863.2874"],["2026-01","864.3850"],["2026-01","863.0161"],["2026-01","802.8653"],["2026-01","865.5205"],["2026-01","863.0829"],["2026-01","862.7644"],["2026-01","858.0136"],["2026-01","864.7463"],["2026-01","862.7380"],["2026-01","864.4208"],["2026-01","871.4020"],["2026-01","872.0147"],["2026-01","870.5604"],["2026-01","880.2971"],["2026-01","792.3593"],["2026-01","841.6445"],["2026-02","840.2335"],["2026-02","804.0341"],["2026-02","804.8799"],["2026-02","815.8845"],["2026-02","826.3373"],["2026-02","824.6370"],["2026-02","822.3994"],["2026-02","821.8198"],["2026-02","819.9734"],["2026-02","818.2399"],["2026-02","819.6859"],["2026-02","819.8571"],["2026-02","801.2726"],["2026-02","711.2538"],["2026-02","682.8511"],["2026-02","727.1177"],["2026-02","745.1387"],["2026-02","727.7752"],["2026-02","730.7140"],["2026-02","719.1303"],["2026-02","  0.0000"]]},"tooltip":{"trigger":"item"}},"dispose":true},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="产量月趋势" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="产量月趋势"><span class="header-section-number">2.4</span> 产量月趋势</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-2bf77a580c8e314485c1" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-2bf77a580c8e314485c1">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"matrix":{"x":{"data":[null,null],"show":false},"y":{"data":[null,null,null,null,null],"show":false},"left":"5%","width":"90%"},"yAxis":[{"show":true,"splitNumber":2,"id":"chart1","gridId":"chart1"},{"show":true,"splitNumber":2,"id":"chart2","gridId":"chart2"},{"show":true,"splitNumber":2,"id":"chart3","gridId":"chart3"},{"show":true,"splitNumber":2,"id":"chart4","gridId":"chart4"},{"show":true,"splitNumber":2,"id":"chart5","gridId":"chart5"},{"show":true,"splitNumber":2,"id":"chart6","gridId":"chart6"},{"show":true,"splitNumber":2,"id":"chart7","gridId":"chart7"},{"show":true,"splitNumber":2,"id":"chart8","gridId":"chart8"},{"show":true,"splitNumber":2,"id":"chart9","gridId":"chart9"},{"show":true,"splitNumber":2,"id":"chart10","gridId":"chart10"}],"xAxis":[{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart1","gridId":"chart1"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart2","gridId":"chart2"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart3","gridId":"chart3"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart4","gridId":"chart4"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart5","gridId":"chart5"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart6","gridId":"chart6"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart7","gridId":"chart7"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart8","gridId":"chart8"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart9","gridId":"chart9"},{"data":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02"],"type":"category","boundaryGap":true,"id":"chart10","gridId":"chart10"}],"series":[{"data":[{"value":["2025-01","22276.46"]},{"value":["2025-02","21623.15"]},{"value":["2025-03","22875.16"]},{"value":["2025-04","18677.77"]},{"value":["2025-05","25670.68"]},{"value":["2025-06","25545.35"]},{"value":["2025-07","23638.12"]},{"value":["2025-08","24105.39"]},{"value":["2025-09","23071.40"]},{"value":["2025-10","23528.43"]},{"value":["2025-11","26448.75"]},{"value":["2025-12","26209.79"]},{"value":["2026-01","25946.85"]},{"value":["2026-02","15683.23"]}],"name":"天然气","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d","xAxisId":"chart1","yAxisId":"chart1"},{"data":[{"value":["2025-01","5032.55"]},{"value":["2025-02","4644.12"]},{"value":["2025-03","5235.23"]},{"value":["2025-04","4263.69"]},{"value":["2025-05","6127.40"]},{"value":["2025-06","5991.32"]},{"value":["2025-07","5607.66"]},{"value":["2025-08","5445.08"]},{"value":["2025-09","4944.98"]},{"value":["2025-10","5391.98"]},{"value":["2025-11","5957.92"]},{"value":["2025-12","6163.80"]},{"value":["2026-01","5568.26"]},{"value":["2026-02","3288.64"]}],"name":"焦油0","type":"bar","yAxisIndex":1,"xAxisIndex":1,"coordinateSystem":"cartesian2d","xAxisId":"chart2","yAxisId":"chart2"},{"data":[{"value":["2025-01"," 5934.98"]},{"value":["2025-02"," 4451.25"]},{"value":["2025-03"," 5337.65"]},{"value":["2025-04"," 6237.22"]},{"value":["2025-05"," 9658.95"]},{"value":["2025-06","12471.89"]},{"value":["2025-07"," 7581.06"]},{"value":["2025-08","10542.11"]},{"value":["2025-09"," 8303.63"]},{"value":["2025-10"," 7896.65"]},{"value":["2025-11"," 8686.56"]},{"value":["2025-12"," 9121.56"]},{"value":["2026-01"," 7761.46"]},{"value":["2026-02"," 5529.36"]}],"name":"焦油1","type":"bar","yAxisIndex":2,"xAxisIndex":2,"coordinateSystem":"cartesian2d","xAxisId":"chart3","yAxisId":"chart3"},{"data":[{"value":["2025-01","16246.55"]},{"value":["2025-02","15195.69"]},{"value":["2025-03","17706.75"]},{"value":["2025-04","12782.51"]},{"value":["2025-05","19343.32"]},{"value":["2025-06","19051.37"]},{"value":["2025-07","18824.43"]},{"value":["2025-08","18708.39"]},{"value":["2025-09","18405.33"]},{"value":["2025-10","18763.49"]},{"value":["2025-11","21021.02"]},{"value":["2025-12","20655.10"]},{"value":["2026-01","20201.26"]},{"value":["2026-02","11461.60"]}],"name":"焦油2","type":"bar","yAxisIndex":3,"xAxisIndex":3,"coordinateSystem":"cartesian2d","xAxisId":"chart4","yAxisId":"chart4"},{"data":[{"value":["2025-01","6863.24"]},{"value":["2025-02","6188.44"]},{"value":["2025-03","7069.81"]},{"value":["2025-04","5732.08"]},{"value":["2025-05","7861.84"]},{"value":["2025-06","7624.77"]},{"value":["2025-07","7065.28"]},{"value":["2025-08","7095.44"]},{"value":["2025-09","7043.03"]},{"value":["2025-10","6966.82"]},{"value":["2025-11","8142.29"]},{"value":["2025-12","8132.62"]},{"value":["2026-01","7964.30"]},{"value":["2026-02","4822.19"]}],"name":"粗酚","type":"bar","yAxisIndex":4,"xAxisIndex":4,"coordinateSystem":"cartesian2d","xAxisId":"chart5","yAxisId":"chart5"},{"data":[{"value":["2025-01","5860.29"]},{"value":["2025-02","5245.98"]},{"value":["2025-03","5892.85"]},{"value":["2025-04","4651.57"]},{"value":["2025-05","5872.29"]},{"value":["2025-06","4609.68"]},{"value":["2025-07","4176.23"]},{"value":["2025-08","4692.13"]},{"value":["2025-09","5052.28"]},{"value":["2025-10","4947.37"]},{"value":["2025-11","7398.58"]},{"value":["2025-12","7447.65"]},{"value":["2026-01","6628.91"]},{"value":["2026-02","3421.06"]}],"name":"硫磺","type":"bar","yAxisIndex":5,"xAxisIndex":5,"coordinateSystem":"cartesian2d","xAxisId":"chart6","yAxisId":"chart6"},{"data":[{"value":["2025-01","17834.56"]},{"value":["2025-02","13730.85"]},{"value":["2025-03","14794.16"]},{"value":["2025-04","13679.38"]},{"value":["2025-05","14134.62"]},{"value":["2025-06","12989.44"]},{"value":["2025-07","12595.46"]},{"value":["2025-08","14157.02"]},{"value":["2025-09","14644.54"]},{"value":["2025-10","14418.56"]},{"value":["2025-11","17059.40"]},{"value":["2025-12","17363.36"]},{"value":["2026-01","19083.54"]},{"value":["2026-02","10378.10"]}],"name":"硫酸铵","type":"bar","yAxisIndex":6,"xAxisIndex":6,"coordinateSystem":"cartesian2d","xAxisId":"chart7","yAxisId":"chart7"},{"data":[{"value":["2025-01"," 272.76"]},{"value":["2025-02"," 282.88"]},{"value":["2025-03","1057.48"]},{"value":["2025-04","2612.38"]},{"value":["2025-05","1278.84"]},{"value":["2025-06"," 854.94"]},{"value":["2025-07","1535.90"]},{"value":["2025-08","1689.16"]},{"value":["2025-09","1043.38"]},{"value":["2025-10"," 708.34"]},{"value":["2025-11","  28.14"]},{"value":["2025-12","   0.00"]},{"value":["2026-01"," 412.84"]},{"value":["2026-02"," 821.92"]}],"name":"液氧产量","type":"bar","yAxisIndex":7,"xAxisIndex":7,"coordinateSystem":"cartesian2d","xAxisId":"chart8","yAxisId":"chart8"},{"data":[{"value":["2025-01"," 301.22"]},{"value":["2025-02"," 320.62"]},{"value":["2025-03"," 848.60"]},{"value":["2025-04","2886.02"]},{"value":["2025-05","1321.20"]},{"value":["2025-06"," 891.32"]},{"value":["2025-07"," 963.40"]},{"value":["2025-08"," 364.46"]},{"value":["2025-09"," 450.56"]},{"value":["2025-10"," 232.26"]},{"value":["2025-11","   0.00"]},{"value":["2025-12","   0.00"]},{"value":["2026-01"," 250.74"]},{"value":["2026-02","   0.00"]}],"name":"液氮产量","type":"bar","yAxisIndex":8,"xAxisIndex":8,"coordinateSystem":"cartesian2d","xAxisId":"chart9","yAxisId":"chart9"},{"data":[{"value":["2025-01"," 8343.50"]},{"value":["2025-02","    0.00"]},{"value":["2025-03"," 4118.34"]},{"value":["2025-04"," 9753.29"]},{"value":["2025-05","13553.87"]},{"value":["2025-06"," 5316.20"]},{"value":["2025-07","  651.70"]},{"value":["2025-08","12798.37"]},{"value":["2025-09"," 9929.02"]},{"value":["2025-10"," 7247.54"]},{"value":["2025-11"," 2628.80"]},{"value":["2025-12"," 3827.87"]},{"value":["2026-01"," 6547.43"]},{"value":["2026-02"," 4656.61"]}],"name":"LNG","type":"bar","yAxisIndex":9,"xAxisIndex":9,"coordinateSystem":"cartesian2d","xAxisId":"chart10","yAxisId":"chart10"}],"grid":[{"id":"chart1","coordinateSystem":"matrix","coord":[0,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart2","coordinateSystem":"matrix","coord":[1,1],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart3","coordinateSystem":"matrix","coord":[0,2],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart4","coordinateSystem":"matrix","coord":[1,3],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart5","coordinateSystem":"matrix","coord":[0,4],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart6","coordinateSystem":"matrix","coord":[1,0],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart7","coordinateSystem":"matrix","coord":[0,1],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart8","coordinateSystem":"matrix","coord":[1,2],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart9","coordinateSystem":"matrix","coord":[0,3],"left":"5","top":"25%","right":"5","bottom":"5"},{"id":"chart10","coordinateSystem":"matrix","coord":[1,4],"left":"5","top":"25%","right":"5","bottom":"5"}],"title":[{"text":"产品产量"},{"text":"天然气","coordinateSystem":"matrix","coord":[0,0],"left":"center","top":"top"},{"text":"焦油0","coordinateSystem":"matrix","coord":[1,1],"left":"center","top":"top"},{"text":"焦油1","coordinateSystem":"matrix","coord":[0,2],"left":"center","top":"top"},{"text":"焦油2","coordinateSystem":"matrix","coord":[1,3],"left":"center","top":"top"},{"text":"粗酚","coordinateSystem":"matrix","coord":[0,4],"left":"center","top":"top"},{"text":"硫磺","coordinateSystem":"matrix","coord":[1,0],"left":"center","top":"top"},{"text":"硫酸铵","coordinateSystem":"matrix","coord":[0,1],"left":"center","top":"top"},{"text":"液氧产量","coordinateSystem":"matrix","coord":[1,2],"left":"center","top":"top"},{"text":"液氮产量","coordinateSystem":"matrix","coord":[0,3],"left":"center","top":"top"},{"text":"LNG","coordinateSystem":"matrix","coord":[1,4],"left":"center","top":"top"}],"tooltip":{"trigger":"axis"}},"dispose":true},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./danhao.html" class="pagination-link" aria-label="单耗月趋势">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">单耗月趋势</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
